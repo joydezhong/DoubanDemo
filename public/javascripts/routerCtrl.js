@@ -4,6 +4,7 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/', {
             templateUrl: '/view/newBooks.ejs',
+            controller: 'NewBooksController'
         })
         .when('/focusBooks', {
             templateUrl: '/view/focusBooks.ejs',

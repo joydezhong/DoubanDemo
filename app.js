@@ -4,9 +4,18 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+var newbooks = require('./routes/newbooks');
 var usersRouter = require('./routes/users');
 
 var app = express();
+
+//connect mongoDB
+var mongoose = require('mongoose');
+var mongoURL = 'mongodb://localhost/Douban';
+mongoose.connect(mongoURL);
+mongoose.Promise = global.Promise;
+var db = mongoose.connection;
+db.on('error',console.error.bind(console, 'MongoDB connection error:'));
 
 // view engine setup
 app.set('views', path.join(__dirname, 'public'));
@@ -24,5 +33,8 @@ app.use("/bower_components",express.static(path.join(__dirname, 'bower_component
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+
+// API
+app.use('/api/books/newbooklist', newbooks);
 
 module.exports = app;
