@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+/*new style*/
+.mdui-appbar .header-bg-color{
+  background-color: #ecf4ec !important;
+}
+.mdui-appbar .mdui-toolbar .my-icon{
+  color: #072 !important;
+}
+
+.mdui-list .mdui-collapse-item .mdui-ripple .icon-arrow{
+  /*color: #239133;*/
+}
+
+.mdui-theme-primary-light-green .mdui-color-theme{
+  background-color: #ecf4ec !important;
+}
+
+.mdui-textfield .mdui-textfield-icon .mdui-icon{
+  color: #072;
+}

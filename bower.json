@@ -1,0 +1,23 @@
+{
+  "name": "doubandemo",
+  "description": "",
+  "main": "",
+  "authors": [
+    "zwp <1347034022@qq.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.3.1",
+    "angular": "1.5.8",
+    "angular-route": "1.5.8",
+    "mdui": "^0.4.1"
+  }
+}
