@@ -13,4 +13,7 @@ DoubanApp.controller('NewBooksController', ['$scope', '$http', function ($scope,
         console.log(err);
     });
 
+    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent){
+        console.log(123);
+    })
 }]);

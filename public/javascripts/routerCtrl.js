@@ -1,5 +1,17 @@
 //    ng 路由和控制器配置
 var DoubanApp = angular.module('DoubanApp', ['ngRoute']);
+DoubanApp.directive('onFinishRender', function($timeout){ //渲染完成
+    return{
+        restrict: 'A',
+        link: function(scope, element, attr){
+            if(scope.$last === true){
+                $timeout(function(){
+                    scope.$emit('ngRepeatFinished');
+                })
+            }
+        },
+    }
+});
 DoubanApp.config(['$routeProvider', function($routeProvider){
     $routeProvider
         .when('/', {

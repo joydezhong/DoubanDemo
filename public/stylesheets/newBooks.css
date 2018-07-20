@@ -1,3 +1,33 @@
 .mdui-typo blockquote{
     margin: 1em 3em 2em 0;
 }
+
+.mdui-card-primary-title{
+    font-size: 20px;
+}
+
+.mdui-card-content{
+    pading: 1px 16px;
+}
+.book-copyright{
+    height: 48px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+.mdui-card-content{
+    height: 72px;
+    padding: 16px 16px 0 16px;
+    /*overflow:hidden;*/
+    /*text-overflow:ellipsis;*/
+    /*white-space:nowrap;*/
+
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+.card-box{
+    margin-bottom: 20px;
+}
