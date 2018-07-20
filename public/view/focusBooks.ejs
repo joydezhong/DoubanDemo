@@ -1,3 +1,131 @@
+<link rel="stylesheet" href="../stylesheets/focusBooks.css">
 
-<h1>Hello, This is Focus Books page!</h1>
+<div class="mdui-typo">
+    <div class="mdui-chip">
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">collections_bookmark</i></span>
+        <span class="mdui-chip-title">最受关注图书</span>
+    </div>
+    <!--<hr/>-->
+    <blockquote>
+        <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
+        <footer>马尔克斯 ——《百年孤独》</footer>
+    </blockquote>
+</div>
+
+<div class="child-box">
+    <div class="mdui-row">
+
+        <div class="mdui-tab" mdui-tab>
+            <a ng-class="{'active':data.current==1}" ng-click="actions.setCurrent(1, $event)" class="mdui-ripple mdui-tab-active">虚构类作品榜</a>
+            <a ng-class="{'active':data.current==2}" ng-click="actions.setCurrent(2, $event)" class="mdui-ripple">非虚构类作品榜</a>
+        </div>
+
+        <div ng-if="data.current==1" class="mdui-p-a-2">
+            <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in FocusVrBookList">
+                <div class="card-box">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img ng-src="https://images.weserv.nl/?url={{item.bookImg}}" crossorigin="anonymous"/>
+                            <div class="mdui-card-menu">
+                                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+                            </div>
+                        </div>
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">{{item.title}}</div>
+                            <div class="mdui-card-primary-subtitle">
+                                <i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>
+                                <em class="mdui-typo-body-2-opacity">{{item.grade}}</em>
+                            </div>
+                            <div class="mdui-card-primary-subtitle">{{item.remark}}</div>
+                        </div>
+                        <div class="mdui-card-content">{{item.copyrightInfo}}</div>
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-btn-raised mdui-ripple" data-buy="{{item.buyHref}}"><i class="mdui-icon mdui-icon-left material-icons">&#xe854;</i>加购</button>
+                            <button class="mdui-btn mdui-btn-raised mdui-ripple" data-ebook="{{item.eBookHref}}"><i class="mdui-icon mdui-icon-left material-icons">&#xe05c;</i>电子书</button>
+                            <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div ng-if="data.current==2" class="mdui-p-a-2">
+            <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12">
+                <div class="card-box">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="../images/card.jpg"/>
+                            <div class="mdui-card-menu">
+                                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+                            </div>
+                        </div>
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">Title</div>
+                            <div class="mdui-card-primary-subtitle">
+                                <i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>
+                                <em class="mdui-typo-body-2-opacity">9.0</em>
+                            </div>
+                            <div class="mdui-card-primary-subtitle">Subtitle</div>
+                        </div>
+                        <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12">
+                <div class="card-box">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="../images/card.jpg"/>
+                            <div class="mdui-card-menu">
+                                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+                            </div>
+                        </div>
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">Title</div>
+                            <div class="mdui-card-primary-subtitle">
+                                <i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>
+                                <em class="mdui-typo-body-2-opacity">9.0</em>
+                            </div>
+                            <div class="mdui-card-primary-subtitle">Subtitle</div>
+                        </div>
+                        <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12">
+                <div class="card-box">
+                    <div class="mdui-card">
+                        <div class="mdui-card-media">
+                            <img src="../images/card.jpg"/>
+                            <div class="mdui-card-menu">
+                                <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+                            </div>
+                        </div>
+                        <div class="mdui-card-primary">
+                            <div class="mdui-card-primary-title">Title</div>
+                            <div class="mdui-card-primary-subtitle">
+                                <i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>
+                                <em class="mdui-typo-body-2-opacity">9.0</em>
+                            </div>
+                            <div class="mdui-card-primary-subtitle">Subtitle</div>
+                        </div>
+                        <div class="mdui-card-content">子曰：「学而时习之，不亦说乎？有朋自远方来，不亦乐乎？人不知，而不愠，不亦君子乎？」</div>
+                        <div class="mdui-card-actions">
+                            <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="../javascripts/focusBooks.js"></script>
 

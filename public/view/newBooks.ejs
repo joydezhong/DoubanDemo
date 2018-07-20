@@ -7,8 +7,8 @@
     </div>
     <!--<hr/>-->
     <blockquote>
-        <p>无论走到哪里，都应该记住，过去都是假的，回忆是一条没有尽头的路，一切以往的春天都不复存在，就连那最坚韧而又狂乱的爱情归根结底也不过是一种转瞬即逝的现实。</p>
-        <footer>马尔克斯 ——《百年孤独》</footer>
+        <p>{{FirstBookDescipt}}</p>
+        <footer>{{FirstBookAuthor}} ——《{{FirstBookTitle}}》</footer>
     </blockquote>
 </div>
 <div class="child-box">
@@ -18,9 +18,8 @@
             <div class="card-box">
                 <div class="mdui-card" data-bookid="{{item.bookId}}">
                     <div class="mdui-card-media">
-                        <img src="https://img3.doubanio.com/view/subject/m/public/s29810441.jpg" crossorigin="anonymous"/>
-
-                        </p>
+                        <img ng-src="https://images.weserv.nl/?url={{item.bookImg}}" crossorigin="anonymous"/>
+                        <!--<p class="img-box" data-img="{{item.bookImg}}"></p>-->
                         <div class="mdui-card-menu">
                             <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
                         </div>

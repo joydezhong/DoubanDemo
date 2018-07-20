@@ -1,4 +1,5 @@
 //注入http服务
+//新书速递控制器
 DoubanApp.controller('NewBooksController', ['$scope', '$http', function ($scope, $http) {
     $scope.pageClass = 'page-home';
 
@@ -6,6 +7,16 @@ DoubanApp.controller('NewBooksController', ['$scope', '$http', function ($scope,
         var json = json.data;
         if(json.code == 1){
             $scope.NewBookList = json.data;
+            $scope.FirstBookTitle = json.data[0].title;
+            $scope.FirstBookDescipt = json.data[0].description;
+            var author = json.data[0].bookInfo;
+            var autorEn = author.match(/](\S*)\//)[1].match(/(\S*)\//)[1];
+            var autorCN = author.match(/(\S*)\//)[1].match(/(\S*)\//)[1];
+            if(autorEn){
+                $scope.FirstBookAuthor = autorEn;
+            }else if(autorCN){
+                $scope.FirstBookAuthor = autorCN;
+            }
         }else{
             console.log(json.data);
         }
@@ -13,7 +24,37 @@ DoubanApp.controller('NewBooksController', ['$scope', '$http', function ($scope,
         console.log(err);
     });
 
-    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent){
-        console.log(123);
-    })
+    //渲染完成执行
+    // $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent){
+    //     console.log('renderFinished');
+    // })
+}]);
+
+//受关注图书控制器
+DoubanApp.controller('FocusBooksController', ['$scope', '$http', '$rootScope', function ($scope, $http, $rootScope) {
+    $scope.pageClass = 'page-focusBook';
+
+    //选项卡的切换
+    $rootScope.data = {
+        current:"1"
+    };
+    $rootScope.actions = {
+        setCurrent:function(param, $event){
+            $($event.target).addClass('mdui-tab-active').siblings().removeClass('mdui-tab-active');
+            $rootScope.data.current = param;
+        }
+    };
+
+    $http.get('/api/books/focusvrbooklist').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.FocusVrBookList = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+
 }]);
