@@ -7,6 +7,7 @@ var indexRouter = require('./routes/index');
 var newbooks = require('./routes/newbooks');
 var focusbook = require('./routes/focusbooks');
 var focusnobook = require('./routes/focusnobooks');
+var topbooks = require('./routes/topbooks');
 
 var usersRouter = require('./routes/users');
 
@@ -41,5 +42,6 @@ app.use('/users', usersRouter);
 app.use('/api/books/newbooklist', newbooks);
 app.use('/api/books/focusbooklist', focusbook);
 app.use('/api/books/focusnobooklist', focusnobook);
+app.use('/api/books/topbooklist', topbooks);
 
 module.exports = app;

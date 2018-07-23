@@ -22,6 +22,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/focusBooks.ejs',
             controller: 'FocusBooksController'
         })
+        .when('/topBooks', {
+            templateUrl: '/view/topBooks.ejs',
+            controller: 'TopBooksController'
+        })
         .otherwise({
            redirectTo: '/home'
         });
