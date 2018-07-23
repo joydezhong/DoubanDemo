@@ -2,10 +2,10 @@ var express = require('express');
 var router = express.Router();
 
 var mongoose = require('mongoose');
-var FocusVrBook = require('../models/focusVrBookModel');
+var FocusNoBook = require('../models/focusNoBookModel');
 
 router.get('/',function (req, res, next) {
-    FocusVrBook.find({},(err, data)=>{
+    FocusNoBook.find({},(err, data)=>{
         if(err){
             res.status(500).json({ error: err })
         }else{

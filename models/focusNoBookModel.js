@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var Schema = mongoose.Schema;
 
-var FocusVrBookSchema = new Schema({
+var FocusNoBookSchema = new Schema({
     title: String,
     bookId: Number,
     copyrightInfo: String,
@@ -14,4 +14,4 @@ var FocusVrBookSchema = new Schema({
     eBookHref: String
 });
 
-module.exports = mongoose.model('FocusVrBook', FocusVrBookSchema, 'focusbookxugou');
+module.exports = mongoose.model('FocusNoBook', FocusNoBookSchema, 'focusnobook');

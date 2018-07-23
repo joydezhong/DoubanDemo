@@ -44,11 +44,22 @@ DoubanApp.controller('FocusBooksController', ['$scope', '$http', '$rootScope', f
             $rootScope.data.current = param;
         }
     };
-
-    $http.get('/api/books/focusvrbooklist').then(function(json){
+    //关注虚构
+    $http.get('/api/books/focusbooklist').then(function(json){
         var json = json.data;
         if(json.code == 1){
-            $scope.FocusVrBookList = json.data;
+            $scope.FocusBookList = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+    //关注非虚构
+    $http.get('/api/books/focusnobooklist').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.FocusNoBookList = json.data;
         }else{
             console.log(json.data);
         }

@@ -5,7 +5,8 @@ var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 var newbooks = require('./routes/newbooks');
-var focuvrbook = require('./routes/focusvrbooks')
+var focusbook = require('./routes/focusbooks');
+var focusnobook = require('./routes/focusnobooks');
 
 var usersRouter = require('./routes/users');
 
@@ -38,6 +39,7 @@ app.use('/users', usersRouter);
 
 // API
 app.use('/api/books/newbooklist', newbooks);
-app.use('/api/books/focusvrbooklist', focuvrbook);
+app.use('/api/books/focusbooklist', focusbook);
+app.use('/api/books/focusnobooklist', focusnobook);
 
 module.exports = app;
