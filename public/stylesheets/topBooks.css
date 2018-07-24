@@ -36,6 +36,10 @@
     margin-bottom: 20px;
 }
 
+.child-box .pag-nav{
+    display: none;
+}
+
 @media screen and (min-width: 600px){
     .mdui-card-media img{
         width: 100%;

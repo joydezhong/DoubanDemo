@@ -85,8 +85,11 @@ DoubanApp.controller('TopBooksController', ['$scope', '$http', function ($scope,
         console.log(err);
     });
 
+
+
     //渲染完成执行
-    // $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent){
-    //     console.log('renderFinished');
-    // })
+    $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent){
+        $(".child-box .pag-nav").css('display','block');
+        console.log('renderFinished');
+    })
 }]);

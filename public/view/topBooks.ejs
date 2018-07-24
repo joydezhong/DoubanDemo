@@ -1,4 +1,6 @@
-﻿<link rel="stylesheet" href="../stylesheets/topBooks.css">
+﻿<!--<link href="https://cdn.bootcss.com/foundation/6.4.4-rc1/css/foundation.min.css" rel="stylesheet">-->
+<link rel="stylesheet" href="../stylesheets/foundation-pagination.css">
+<link rel="stylesheet" href="../stylesheets/topBooks.css">
 
 <div class="mdui-typo">
     <div class="mdui-chip">
@@ -7,7 +9,7 @@
     </div>
     <!--<hr/>-->
     <blockquote>
-        <p>{{FirstBookDescipt}}</p>
+        <p>{{FirstBookDescipt?FirstBookDescipt:"每本书都值得用心品味！"}}</p>
         <footer>《{{FirstBookTitle}}》</footer>
     </blockquote>
 </div>
@@ -15,7 +17,7 @@
     <div class="mdui-row">
 
         <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in TopBookList" on-finish-render>
-            <div class="card-box">
+            <div class="card-box" data-id="{{item._id}}">
                 <div class="mdui-card" data-bookid="{{item.bookId}}">
                     <div class="mdui-card-media">
                         <img ng-src="https://images.weserv.nl/?url={{item.bookImg}}" crossorigin="anonymous"/>
@@ -33,7 +35,7 @@
                         </div>
                         <div class="mdui-card-primary-subtitle book-copyright">{{item.copyrightInfo}}</div>
                     </div>
-                    <div class="mdui-card-content">{{item.description?item.description:"暂无"}}</div>
+                    <div class="mdui-card-content">{{item.description?item.description:"暂无描述"}}</div>
                     <div class="mdui-card-actions">
                         <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
                     </div>
@@ -42,6 +44,22 @@
         </div>
 
     </div>
+    <!--pagintaion-->
+    <nav aria-label="Pagination" class="pag-nav" style="display: none;">
+        <ul class="pagination text-center">
+            <li class="pagination-previous disabled">前页</li>
+            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
+            <li><a href="" aria-label="Page 2">2</a></li>
+            <li><a href="" aria-label="Page 3">3</a></li>
+            <li><a href="" aria-label="Page 4">4</a></li>
+            <li class="ellipsis"></li>
+            <li><a href="" aria-label="Page 12">12</a></li>
+            <li><a href="" aria-label="Page 13">13</a></li>
+            <li class="pagination-next"><a href="" aria-label="Next page">后页</a></li>
+        </ul>
+    </nav>
+    <!--pagintaion end-->
+
 </div>
 
 <script type="text/javascript" src="../javascripts/topBooks.js"></script>
