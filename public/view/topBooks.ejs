@@ -47,15 +47,9 @@
     <!--pagintaion-->
     <nav aria-label="Pagination" class="pag-nav" style="display: none;">
         <ul class="pagination text-center">
-            <li class="pagination-previous disabled">前页</li>
-            <li class="current"><span class="show-for-sr">You're on page</span> 1</li>
-            <li><a href="" aria-label="Page 2">2</a></li>
-            <li><a href="" aria-label="Page 3">3</a></li>
-            <li><a href="" aria-label="Page 4">4</a></li>
-            <li class="ellipsis"></li>
-            <li><a href="" aria-label="Page 12">12</a></li>
-            <li><a href="" aria-label="Page 13">13</a></li>
-            <li class="pagination-next"><a href="" aria-label="Next page">后页</a></li>
+            <li class="pagination-previous" ng-class="{true:'disabled'}[p_current==1]"><a href="javascript:void(0);" ng-click="p_prev()" aria-label="Previous page">前页</a></li>
+            <li ng-repeat="page in pages" ng-class="{true:'current'}[p_current==page]"><a href="javascript:void(0);" ng-click="load_page(page)">{{ page }}</a></li>
+            <li class="pagination-next" ng-class="{true:'disabled'}[p_current==p_all_page]"><a href="javascript:void(0);" ng-click="p_next()" aria-label="Next page">后页</a></li>
         </ul>
     </nav>
     <!--pagintaion end-->

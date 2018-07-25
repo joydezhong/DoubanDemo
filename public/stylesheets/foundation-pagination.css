@@ -66,10 +66,13 @@ ul ul, ol ul, ul ol, ol ol {
 .pagination button:hover {
     background: #e6e6e6; }
 .pagination .current {
-    padding: 0.1875rem 0.625rem;
+    /*padding: 0.1875rem 0.625rem;*/
     background: #1779ba;
     color: #fefefe;
     cursor: default; }
+.pagination .current a{
+    color: #fefefe;
+}
 .pagination .disabled {
     padding: 0.1875rem 0.625rem;
     color: #cacaca;
@@ -81,14 +84,16 @@ ul ul, ol ul, ul ol, ol ol {
     content: '\2026';
     color: #0a0a0a; }
 
-.pagination-previous a::before,
-.pagination-previous.disabled::before {
+.pagination-previous a::before
+/*.pagination-previous.disabled::before */
+{
     display: inline-block;
     margin-right: 0.5rem;
     content: '\00ab'; }
 
-.pagination-next a::after,
-.pagination-next.disabled::after {
+.pagination-next a::after
+/*.pagination-next.disabled::after */
+{
     display: inline-block;
     margin-left: 0.5rem;
     content: '\00bb'; }
