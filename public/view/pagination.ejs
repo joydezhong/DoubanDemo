@@ -1,0 +1,7 @@
+<nav aria-label="Pagination" class="pag-nav" style="display: none;">
+    <ul class="pagination text-center">
+        <li class="pagination-previous" ng-class="{true:'disabled'}[p_current==1]"><a href="javascript:void(0);" ng-click="p_prev()" aria-label="Previous page">前页</a></li>
+        <li ng-repeat="page in pages" ng-class="{true:'current'}[p_current==page]"><a href="javascript:void(0);" ng-click="load_page(page)">{{ page }}</a></li>
+        <li class="pagination-next" ng-class="{true:'disabled'}[p_current==p_all_page]"><a href="javascript:void(0);" ng-click="p_next()" aria-label="Next page">后页</a></li>
+    </ul>
+</nav>

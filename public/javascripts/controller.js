@@ -17,6 +17,10 @@ DoubanApp.controller('NewBooksController', ['$scope', '$http', function ($scope,
             }else if(autorCN){
                 $scope.FirstBookAuthor = autorCN;
             }
+
+            //评分星星
+
+
         }else{
             console.log(json.data);
         }
@@ -71,19 +75,6 @@ DoubanApp.controller('FocusBooksController', ['$scope', '$http', '$rootScope', f
 //图书top250排行
 DoubanApp.controller('TopBooksController', ['$scope', '$http', function ($scope, $http) {
     $scope.pageClass = 'page-topBooks';
-
-    // $http.get('/api/books/topbooklist').then(function(json){
-    //     var json = json.data;
-    //     if(json.code == 1){
-    //         $scope.TopBookList = json.data;
-    //         $scope.FirstBookTitle = json.data[0].title;
-    //         $scope.FirstBookDescipt = json.data[0].description;
-    //     }else{
-    //         console.log(json.data);
-    //     }
-    // },function(err){
-    //     console.log(err);
-    // });
 
     //分页
     $scope.count = 0; //总条数

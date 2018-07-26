@@ -26,13 +26,14 @@
                     </div>
                     <div class="mdui-card-primary">
                         <div class="mdui-card-primary-title">{{item.title}}</div>
-                        <div class="mdui-card-primary-subtitle">
-                            <i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>
-                            <em class="mdui-typo-body-2-opacity">{{item.grade?item.grade:"评价人数不足"}}</em>
+                        <div class="mdui-card-primary-subtitle grade-div">
+                            <!--<i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>-->
+                            <i ng-if="item.grade" class="allstar" ng-class="allstar{{item.grade*10}}"></i>
+                            <em class="mdui-typo-body-2-opacity">{{item.grade?item.grade:"无评价"}}</em>
                         </div>
                         <div class="mdui-card-primary-subtitle book-copyright">{{item.bookInfo}}</div>
                     </div>
-                    <div class="mdui-card-content">{{item.description?item.description:"暂无"}}</div>
+                    <div class="mdui-card-content">{{item.description?item.description:"暂无描述"}}</div>
                     <div class="mdui-card-actions">
                         <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
                     </div>

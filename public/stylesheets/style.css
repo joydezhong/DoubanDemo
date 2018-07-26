@@ -33,3 +33,58 @@ a {
   padding-bottom: 100px;
 }
 
+/*星星样式*/
+
+.allstar {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  background: url("../images/ic_rating_s.png") no-repeat;
+  width: 55px;
+  height: 11px;
+  margin: 0 3px 0 0;
+  overflow: hidden
+}
+.allstar100,.allstar99,.allstar98,.allstar97,.allstar96,.allstar95 {  /*9.5-10*/
+  background-position: 0 0px
+}
+
+.allstar94,.allstar93,.allstar92,.allstar91,.allstar90,.allstar89,.allstar88,.allstar87,.allstar86,.allstar85 {  /*8.5-9.4*/
+  background-position: 0 -11px
+}
+
+.allstar84,.allstar83,.allstar82,.allstar81,.allstar80,.allstar79,.allstar78,.allstar77,.allstar76,.allstar74 { /*7.5-8.4*/
+  background-position: 0 -22px
+}
+
+.allstar74,.allstar73,.allstar72,.allstar71,.allstar70,.allstar69,.allstar68,.allstar67,.allstar66,.allstar65 { /*6.5-7.4*/
+  background-position: 0 -33px
+}
+
+.allstar64,.allstar63,.allstar62,.allstar61,.allstar60,.allstar59,.allstar58,.allstar57,.allstar56,.allstar55 { /*5.5-6.4*/
+  background-position: 0 -44px
+}
+
+.allstar54,.allstar53,.allstar52,.allstar51,.allstar50,.allstar49,.allstar48,.allstar47,.allstar46,.allstar45 {  /*4.5-5.4*/
+  background-position: 0 -55px
+}
+
+.allstar44,.allstar43,.allstar42,.allstar41,.allstar40,.allstar39,.allstar38,.allstar37,.allstar36,.allstar35 {  /*3.5-4.4*/
+  background-position: 0 -66px
+}
+
+.allstar34,.allstar33,.allstar32,.allstar31,.allstar30,.allstar29,.allstar28,.allstar27,.allstar26,.allstar25 { /*2.5-3.4*/
+  background-position: 0 -77px
+}
+
+.allstar24,.allstar23,.allstar22,.allstar21,.allstar20,.allstar19,.allstar18,.allstar17,.allstar16,.allstar15 { /*1.5-2.4*/
+  background-position: 0 -88px
+}
+
+.allstar14,.allstar13,.allstar12,.allstar11,.allstar10,.allstar9,.allstar8,.allstar7,.allstar6,.allstar5 { /*0.5-1.4*/
+  background-position: 0 -99px
+}
+
+.allstar00 {
+  background-position: 0 -110px
+}
