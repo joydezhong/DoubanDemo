@@ -14,8 +14,6 @@ var FocusBookSchema = new Schema({
 //分页静态方法
 FocusBookSchema.statics = {
     fetch(id, condition, size, page, cb){
-        console.log(condition);
-        console.log(id);
         if(condition == 1){  //下翻
             return this.find({'_id': {$gt: id}})
                 .limit(24)
@@ -27,8 +25,9 @@ FocusBookSchema.statics = {
                 .sort({'_id': -1})
                 .exec(cb);
         }else if(condition == -1){  //跳页
+            console.log((page-1)*size);
             return this.find({})
-                .skip(page * size)
+                .skip((page-1) * size)
                 .limit(24)
                 .sort({'_id': 1})
                 .exec(cb);
@@ -38,18 +37,6 @@ FocusBookSchema.statics = {
                 .sort({'_id': 1})
                 .exec(cb);
         }
-
-        // if(id){
-        //     return this.find({'_id': {$gt: id}})  //正序 向下查询 变动lt/gt和id
-        //         .limit(24)
-        //         .sort({'_id': 1})
-        //         .exec(cb);
-        // }else{
-        //     return this.find({})
-        //         .limit(24)
-        //         .sort({'_id': 1})
-        //         .exec(cb);
-        // }
     }
 };
 

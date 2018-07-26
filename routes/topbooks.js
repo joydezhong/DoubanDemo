@@ -5,17 +5,6 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var TopBook = require('../models/topBookModel');
 
-// router.get('/',function (req, res, next) {
-//     TopBook.find({},(err, data)=>{
-//         if(err){
-//             res.status(500).json({ error: err })
-//         }else{
-//             res.json({code: 1, data: data})
-//         }
-//
-//     })
-// });
-
 //启动翻页 改版
 var beforePage = 1;
 router.get('/', function(req, res, next){
@@ -37,13 +26,22 @@ router.get('/', function(req, res, next){
     TopBook.countDocuments({}, (err, count)=>{
         TopBook.fetch(id, condition, size, page, (err, data)=>{
             if(err) next(err);
+            if(condition == 0){
+                data.sort(function(x, y){ //解决倒序问题
+                    if(x < y){
+                        return -1;
+                    }
+                    if(x > y){
+                        return 1;
+                    }
+                    return 0;
+                })
+            }
             res.json({code: 1, data: data, count: count, pageCount: Math.ceil(count/24)});
         });
     });
 
 
 });
-
-
 
 module.exports = router;
