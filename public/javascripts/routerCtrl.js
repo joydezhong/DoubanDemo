@@ -1,6 +1,32 @@
 //    ng 路由和控制器配置
 var DoubanApp = angular.module('DoubanApp', ['ngRoute']);
 
+//获取当前城市的factory
+DoubanApp.factory('GetCityService',function($http){
+   var factory = {};
+   //获取当前城市ip
+   var req = {
+       method: 'GET',
+       url: 'https://ipapi.co/json/',
+       headers: {
+           'Content-Type': 'text/html'
+       },
+       data: {}
+   }
+   $http(req).then(function(json){
+       var ip = json.data.ip;
+       $http.jsonp('http://ip.taobao.com/service/getIpInfo.php?ip='+ip).then(function(json){
+           console.log(json);
+
+       });
+       factory.CityName = "广州";
+   });
+
+
+    return factory;
+
+});
+
 //渲染完成
 DoubanApp.directive('onFinishRender', function($timeout){
     return{
@@ -12,7 +38,6 @@ DoubanApp.directive('onFinishRender', function($timeout){
                 })
             }
         },
-
     }
 });
 
@@ -30,6 +55,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
         .when('/topBooks', {
             templateUrl: '/view/topBooks.ejs',
             controller: 'TopBooksController'
+        })
+        .when('/hotMovies', {
+            templateUrl: '/view/hotMovies.ejs',
+            controller: 'hotMoviesController'
         })
         .otherwise({
            redirectTo: '/home'

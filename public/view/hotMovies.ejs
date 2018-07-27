@@ -1,24 +1,23 @@
-﻿<link rel="stylesheet" href="../stylesheets/newBooks.css">
+﻿<link rel="stylesheet" href="../stylesheets/hotMovies.css">
 
 <div class="mdui-typo">
     <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">library_books</i></span>
-        <span class="mdui-chip-title">新书速递</span>
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">movie_filter</i></span>
+        <span class="mdui-chip-title">正在热映</span>
     </div>
     <!--<hr/>-->
     <blockquote>
-        <p>{{FirstBookDescipt}}</p>
-        <footer>{{FirstBookAuthor}} ——《{{FirstBookTitle}}》</footer>
+        <h3>电影票——广州 <small><a href="" style="vertical-align: bottom">切换城市</a></small></h3>
     </blockquote>
 </div>
 <div class="child-box">
     <div class="mdui-row">
 
-        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in NewBookList" on-finish-render>
+        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in NewMovieList" on-finish-render>
             <div class="card-box">
-                <div class="mdui-card" data-bookid="{{item.bookId}}">
+                <div class="mdui-card" data-movieid="{{item.movieId}}">
                     <div class="mdui-card-media">
-                        <img ng-src="https://images.weserv.nl/?url={{item.bookImg}}" crossorigin="anonymous"/>
+                        <img ng-src="https://images.weserv.nl/?url={{item.movieImg}}" crossorigin="anonymous"/>
                         <!--<p class="img-box" data-img="{{item.bookImg}}"></p>-->
                         <div class="mdui-card-menu">
                             <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
@@ -29,13 +28,15 @@
                         <div class="mdui-card-primary-subtitle grade-div">
                             <!--<i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>-->
                             <i ng-model="item.grade" class="allstar allstar{{item.grade*10}}"></i>
-                            <em ng-if="item.grade" class="mdui-typo-body-2-opacity">{{item.grade | number:1}}</em>
+                            <em ng-if="item.grade" class="mdui-typo-body-2-opacity">{{item.grade}}</em>
                             <em ng-if="!item.grade" class="mdui-typo-body-2-opacity">评论不足</em>
                         </div>
-                        <div class="mdui-card-primary-subtitle book-copyright">{{item.bookInfo}}</div>
+                        <div class="mdui-card-primary-subtitle book-copyright">[{{item.region}}]{{item.actors?item.actors:"演员不详"}}</div>
                     </div>
-                    <div class="mdui-card-content">{{item.description?item.description:"暂无描述"}}</div>
                     <div class="mdui-card-actions">
+                        <div class="mdui-chip my-chip">
+                            <span class="mdui-chip-title">选座购票</span>
+                        </div>
                         <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
                     </div>
                 </div>
@@ -45,5 +46,5 @@
     </div>
 </div>
 
-<script type="text/javascript" src="../javascripts/newBooks.js"></script>
+<script type="text/javascript" src="../javascripts/hotMovies.js"></script>
 

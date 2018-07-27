@@ -30,8 +30,11 @@
                         <div class="mdui-card-primary-title">{{item.title}}</div>
                         <div class="mdui-card-primary-subtitle book-copyright">{{item.enTitle?item.enTitle:"无"}}</div>
                         <div class="mdui-card-primary-subtitle">
-                            <i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>
-                            <em class="mdui-typo-body-2-opacity">{{item.grade?item.grade:"无评价"}}{{item.remark}}</em>
+                            <!--<i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>-->
+                            <!--<em class="mdui-typo-body-2-opacity">{{item.grade?item.grade:"无评价"}}{{item.remark}}</em>-->
+                            <i ng-model="item.grade" class="allstar allstar{{item.grade*10}}"></i>
+                            <em ng-if="item.grade" class="mdui-typo-body-2-opacity">{{item.grade | number:1}}{{item.remark}}</em>
+                            <em ng-if="!item.grade" class="mdui-typo-body-2-opacity">评论不足</em>
                         </div>
                         <div class="mdui-card-primary-subtitle book-copyright">{{item.copyrightInfo}}</div>
                     </div>

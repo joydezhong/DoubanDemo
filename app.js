@@ -4,10 +4,13 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+//book
 var newbooks = require('./routes/newbooks');
 var focusbook = require('./routes/focusbooks');
 var focusnobook = require('./routes/focusnobooks');
 var topbooks = require('./routes/topbooks');
+//movie
+var hotmovies = require('./routes/hotmovies');
 
 var usersRouter = require('./routes/users');
 
@@ -46,9 +49,11 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // API
-app.use('/api/books/newbooklist', newbooks);
-app.use('/api/books/focusbooklist', focusbook);
-app.use('/api/books/focusnobooklist', focusnobook);
-app.use('/api/books/topbooklist', topbooks);
+app.use('/api/books/newBookList', newbooks);
+app.use('/api/books/focusBookList', focusbook);
+app.use('/api/books/focusNoBookList', focusnobook);
+app.use('/api/books/topBookList', topbooks);
+app.use('/api/movies/hotMovieList', hotmovies);
+
 
 module.exports = app;

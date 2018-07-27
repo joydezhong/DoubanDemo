@@ -3,7 +3,7 @@
 DoubanApp.controller('NewBooksController', ['$scope', '$http', function ($scope, $http) {
     $scope.pageClass = 'page-home';
 
-    $http.get('/api/books/newbooklist').then(function(json){
+    $http.get('/api/books/newBookList').then(function(json){
         var json = json.data;
         if(json.code == 1){
             $scope.NewBookList = json.data;
@@ -49,7 +49,7 @@ DoubanApp.controller('FocusBooksController', ['$scope', '$http', '$rootScope', f
         }
     };
     //关注虚构
-    $http.get('/api/books/focusbooklist').then(function(json){
+    $http.get('/api/books/focusBookList').then(function(json){
         var json = json.data;
         if(json.code == 1){
             $scope.FocusBookList = json.data;
@@ -60,7 +60,7 @@ DoubanApp.controller('FocusBooksController', ['$scope', '$http', '$rootScope', f
         console.log(err);
     });
     //关注非虚构
-    $http.get('/api/books/focusnobooklist').then(function(json){
+    $http.get('/api/books/focusNoBookList').then(function(json){
         var json = json.data;
         if(json.code == 1){
             $scope.FocusNoBookList = json.data;
@@ -88,7 +88,7 @@ DoubanApp.controller('TopBooksController', ['$scope', '$http', function ($scope,
     $scope.condition = 1; //翻页情况 1下翻 0上翻 -1跳页
 
     var _get = function(page,size,condition,callback){
-        $http.get('/api/books/topbooklist?page='+page+'&pageSize='+$scope.p_pernum+'&last_id='+$scope.last_id+'&first_id='+$scope.first_id+'&condition='+condition).then(function(json){
+        $http.get('/api/books/topBookList?page='+page+'&pageSize='+$scope.p_pernum+'&last_id='+$scope.last_id+'&first_id='+$scope.first_id+'&condition='+condition).then(function(json){
             var json = json.data;
             if(json.code == 1){
                 $scope.TopBookList = json.data;
@@ -178,4 +178,26 @@ DoubanApp.controller('TopBooksController', ['$scope', '$http', function ($scope,
         $(".child-box .pag-nav").css('display','block');
         console.log('renderFinished');
     })
+}]);
+
+//正在热映控制器
+DoubanApp.controller('hotMoviesController', ['$scope', '$http', 'GetCityService', function ($scope, $http, GetCityService) {
+    $scope.pageClass = 'page-hotMovies';
+
+    $http.get('/api/movies/hotMovieList').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.NewMovieList = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+    //获取当前城市ip
+
+
+
+
 }]);
