@@ -60,8 +60,16 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/hotMovies.ejs',
             controller: 'hotMoviesController'
         })
+        .when('/willMovies', {
+            templateUrl: '/view/willMovies.ejs',
+            controller: 'willMoviesController'
+        })
+        .when('/topMovies', {
+            templateUrl: '/view/topMovies.ejs',
+            controller: 'topMoviesController'
+        })
         .otherwise({
-           redirectTo: '/home'
+           redirectTo: '/error/error404.ejs'
         });
 }]).run(['$rootScope', '$location', function($rootScope, $location) {
     /* 监听路由的状态变化 保存记录至session 获取切换页面的类别 以供搜索使用*/

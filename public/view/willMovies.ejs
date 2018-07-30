@@ -1,19 +1,19 @@
-﻿<link rel="stylesheet" href="../stylesheets/hotMovies.css">
+﻿<link rel="stylesheet" href="../stylesheets/willMovies.css">
 
 <div class="mdui-typo">
     <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">movie_filter</i></span>
-        <span class="mdui-chip-title">正在热映</span>
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">watch_later</i></span>
+        <span class="mdui-chip-title">即将上映</span>
     </div>
     <!--<hr/>-->
     <blockquote>
-        <h3>电影票——广州 <small><a href="" style="vertical-align: bottom">切换城市</a></small></h3>
+        <h3>影讯——广州 <small><a href="" style="vertical-align: bottom">切换城市</a></small></h3>
     </blockquote>
 </div>
 <div class="child-box">
     <div class="mdui-row">
 
-        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in NewMovieList" on-finish-render>
+        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in WillMovieList" on-finish-render>
             <div class="card-box">
                 <div class="mdui-card" data-movieid="{{item.movieId}}">
                     <div class="mdui-card-media">
@@ -26,25 +26,19 @@
                     <div class="mdui-card-primary">
                         <div class="mdui-card-primary-title">{{item.title}}</div>
                         <div class="mdui-card-primary-subtitle grade-div">
-                            <!--<i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>-->
-                            <i ng-model="item.grade" class="allstar allstar{{item.grade*10}}"></i>
-                            <em ng-if="item.grade" class="mdui-typo-body-2-opacity">{{item.grade}}</em>
-                            <em ng-if="!item.grade" class="mdui-typo-body-2-opacity">评论不足</em>
+                            <em class="mdui-typo-body-2-opacity">{{item.release}}</em>
+                            <em class="mdui-typo-body-2-opacity">({{item.grade}})</em>
                         </div>
-                        <div class="mdui-card-primary-subtitle book-copyright">[{{item.region}}]{{item.actors?item.actors:"演员不详"}}</div>
+                        <div class="mdui-card-primary-subtitle book-copyright">[{{item.region}}] {{item.type}}</div>
                     </div>
                     <div class="mdui-card-actions">
-                        <div class="mdui-chip my-chip">
-                            <span class="mdui-chip-title" data-href="{{item.buyHref}}">选座购票</span>
-                        </div>
+                        <a ng-if="item.videoHref" href="{{item.videoHref}}" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '预告片', position: 'top'}"><i class="mdui-icon material-icons play-icon">&#xe039;</i></a>
                         <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
                     </div>
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
-<script type="text/javascript" src="../javascripts/hotMovies.js"></script>
-
+<script type="text/javascript" src="../javascripts/willMovies.js"></script>

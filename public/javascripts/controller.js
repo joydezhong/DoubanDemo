@@ -196,8 +196,43 @@ DoubanApp.controller('hotMoviesController', ['$scope', '$http', 'GetCityService'
     });
 
     //获取当前城市ip
+}]);
+
+//即将上映控制器
+DoubanApp.controller('willMoviesController', ['$scope', '$http', function ($scope, $http) {
+    $scope.pageClass = 'page-willMovies';
+
+    $http.get('/api/movies/willMovieList').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.WillMovieList = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+    //获取当前城市ip
+}]);
 
 
+//----------电影模块Top250之后开始启用豆瓣API----------//
 
+//Top250电影控制器
+DoubanApp.controller('topMoviesController', ['$scope', '$http', function ($scope, $http) {
+    $scope.pageClass = 'page-topMovies';
 
+    $http.get('').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.TopMovieList = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+    //获取当前城市ip
 }]);

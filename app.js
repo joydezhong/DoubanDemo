@@ -11,6 +11,8 @@ var focusnobook = require('./routes/focusnobooks');
 var topbooks = require('./routes/topbooks');
 //movie
 var hotmovies = require('./routes/hotmovies');
+var willmovies = require('./routes/willmovies');
+var topmovies = require('./routes/topmovies');
 
 var usersRouter = require('./routes/users');
 
@@ -48,12 +50,15 @@ app.use("/bower_components",express.static(path.join(__dirname, 'bower_component
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
-// API
+// API books
 app.use('/api/books/newBookList', newbooks);
 app.use('/api/books/focusBookList', focusbook);
 app.use('/api/books/focusNoBookList', focusnobook);
 app.use('/api/books/topBookList', topbooks);
+//API movies
 app.use('/api/movies/hotMovieList', hotmovies);
+app.use('/api/movies/willMovieList', willmovies);
+app.use('https://api.douban.com//v2/movie/in_theaters?city=%E5%B9%BF%E5%B7%9E', topmovies);
 
 
 module.exports = app;
