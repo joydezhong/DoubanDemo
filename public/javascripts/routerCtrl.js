@@ -68,6 +68,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/topMovies.ejs',
             controller: 'topMoviesController'
         })
+        .when('/weekMovies', {
+            templateUrl: '/view/weekMovies.ejs',
+            controller: 'weekMoviesController'
+        })
         .otherwise({
            redirectTo: '/error/error404.ejs'
         });

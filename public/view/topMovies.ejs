@@ -1,8 +1,9 @@
-﻿<link rel="stylesheet" href="../stylesheets/topMovies.css">
+﻿<link rel="stylesheet" href="../stylesheets/foundation-pagination.css">
+<link rel="stylesheet" href="../stylesheets/topMovies.css">
 
 <div class="mdui-typo">
     <div class="mdui-chip">
-        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">watch_later</i></span>
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe25a;</i></span>
         <span class="mdui-chip-title">电影 Top 250</span>
     </div>
     <!--<hr/>-->
@@ -13,9 +14,9 @@
 <div class="child-box">
     <div class="mdui-row">
 
-        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in WillMovieList" on-finish-render>
-            <div class="card-box">
-                <div class="mdui-card" data-movieid="{{item.movieId}}">
+        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in TopMovieList" on-finish-render>
+            <div class="card-box" data-id="{{item._id}}">
+                <div class="mdui-card" data-bookid="{{item.movieId}}">
                     <div class="mdui-card-media">
                         <img ng-src="https://images.weserv.nl/?url={{item.movieImg}}" crossorigin="anonymous"/>
                         <!--<p class="img-box" data-img="{{item.bookImg}}"></p>-->
@@ -25,20 +26,34 @@
                     </div>
                     <div class="mdui-card-primary">
                         <div class="mdui-card-primary-title">{{item.title}}</div>
-                        <div class="mdui-card-primary-subtitle grade-div">
-                            <em class="mdui-typo-body-2-opacity">{{item.release}}</em>
-                            <em class="mdui-typo-body-2-opacity">({{item.grade}})</em>
+                        <div class="mdui-card-primary-subtitle">
+                            <!--<i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>-->
+                            <!--<em class="mdui-typo-body-2-opacity">{{item.grade?item.grade:"无评价"}}{{item.remark}}</em>-->
+                            <i ng-model="item.grade" class="allstar allstar{{item.grade*10}}"></i>
+                            <em ng-if="item.grade" class="mdui-typo-body-2-opacity">{{item.grade | number:1}}({{item.remark}})</em>
+                            <em ng-if="!item.grade" class="mdui-typo-body-2-opacity">评论不足</em>
                         </div>
-                        <div class="mdui-card-primary-subtitle book-copyright">[{{item.region}}] {{item.type}}</div>
+                        <div class="mdui-card-primary-subtitle book-copyright">{{item.copyrightInfo}}</div>
                     </div>
+                    <div class="mdui-card-content">{{item.description?item.description:"暂无描述"}}</div>
                     <div class="mdui-card-actions">
-                        <a ng-if="item.videoHref" href="{{item.videoHref}}" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '预告片', position: 'top'}"><i class="mdui-icon material-icons play-icon">&#xe039;</i></a>
                         <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
                     </div>
                 </div>
             </div>
         </div>
+
     </div>
+    <!--pagintaion-->
+    <nav aria-label="Pagination" class="pag-nav" style="display: none;">
+        <ul class="pagination text-center">
+            <li class="pagination-previous" ng-class="{true:'disabled'}[p_current==1]"><a href="javascript:void(0);" ng-click="p_prev()" aria-label="Previous page">前页</a></li>
+            <li ng-repeat="page in pages" ng-class="{true:'current'}[p_current==page]"><a href="javascript:void(0);" ng-click="load_page(page)">{{ page }}</a></li>
+            <li class="pagination-next" ng-class="{true:'disabled'}[p_current==p_all_page]"><a href="javascript:void(0);" ng-click="p_next()" aria-label="Next page">后页</a></li>
+        </ul>
+    </nav>
+    <!--pagintaion end-->
+
 </div>
 
 <script type="text/javascript" src="../javascripts/topMovies.js"></script>

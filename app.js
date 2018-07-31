@@ -13,6 +13,7 @@ var topbooks = require('./routes/topbooks');
 var hotmovies = require('./routes/hotmovies');
 var willmovies = require('./routes/willmovies');
 var topmovies = require('./routes/topmovies');
+var weekmovies = require('./routes/weekmovies');
 
 var usersRouter = require('./routes/users');
 
@@ -58,7 +59,8 @@ app.use('/api/books/topBookList', topbooks);
 //API movies
 app.use('/api/movies/hotMovieList', hotmovies);
 app.use('/api/movies/willMovieList', willmovies);
-app.use('https://api.douban.com//v2/movie/in_theaters?city=%E5%B9%BF%E5%B7%9E', topmovies);
+app.use('/api/movies/topMovieList', topmovies);
+app.use('/api/movies/weekMovieList', weekmovies);
 
 
 module.exports = app;

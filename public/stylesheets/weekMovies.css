@@ -14,14 +14,14 @@
     pading: 1px 16px;
 }
 .book-copyright{
-    height: 72px;
+    height: 48px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     overflow: hidden;
 }
 .mdui-card-content{
-    height: 72px;
+    height: 168px;
     padding: 16px 16px 0 16px;
     /*overflow:hidden;*/
     /*text-overflow:ellipsis;*/
@@ -29,27 +29,11 @@
 
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 7;
     overflow: hidden;
 }
 .card-box{
     margin-bottom: 20px;
-}
-
-.mdui-typo a{
-    vertical-align: bottom;
-}
-
-.mdui-card-actions .my-chip{
-    color: #494949;
-    background: #F3F3F3;
-    background: -moz-linear-gradient(top, #F3F3F3, #ECECEC);
-    background: -webkit-gradient(linear, 0 0, 0 bottom, from(#F3F3F3), to(#ECECEC));
-    background: -o-linear-gradient(top, #F3F3F3, #ECECEC);
-}
-
-.play-icon{
-    color: #9e9e9e;
 }
 
 @media screen and (min-width: 600px){
