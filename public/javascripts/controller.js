@@ -342,3 +342,22 @@ DoubanApp.controller('weekMoviesController', ['$scope', '$http', function ($scop
 
     //获取当前城市ip
 }]);
+
+//北美票房榜控制器
+DoubanApp.controller('usaMoviesController', ['$scope', '$http', function ($scope, $http) {
+    $scope.pageClass = 'page-usaMovies';
+
+    $http.get('/api/movies/usaMovieList').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.LineTime = json.data[0].date;
+            $scope.LineTitle = json.data[0].title;
+            $scope.UsaMovieList = json.data[0].subjects;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+}]);

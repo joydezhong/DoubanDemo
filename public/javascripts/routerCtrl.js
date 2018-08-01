@@ -72,6 +72,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/weekMovies.ejs',
             controller: 'weekMoviesController'
         })
+        .when('/usaMovies', {
+            templateUrl: '/view/usaMovies.ejs',
+            controller: 'usaMoviesController'
+        })
         .otherwise({
            redirectTo: '/error/error404.ejs'
         });

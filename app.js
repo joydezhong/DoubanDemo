@@ -14,6 +14,7 @@ var hotmovies = require('./routes/hotmovies');
 var willmovies = require('./routes/willmovies');
 var topmovies = require('./routes/topmovies');
 var weekmovies = require('./routes/weekmovies');
+var usamovies = require('./routes/usamovies');
 
 var usersRouter = require('./routes/users');
 
@@ -61,6 +62,7 @@ app.use('/api/movies/hotMovieList', hotmovies);
 app.use('/api/movies/willMovieList', willmovies);
 app.use('/api/movies/topMovieList', topmovies);
 app.use('/api/movies/weekMovieList', weekmovies);
+app.use('/api/movies/usaMovieList', usamovies);
 
 
 module.exports = app;

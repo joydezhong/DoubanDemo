@@ -1,0 +1,48 @@
+﻿<link rel="stylesheet" href="../stylesheets/usaMovies.css">
+
+<div class="mdui-typo">
+    <div class="mdui-chip">
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe8d0;</i></span>
+        <!--<span class="mdui-chip-title">周口碑榜</span>-->
+    </div>
+    <!--<hr/>-->
+    <blockquote>
+        <p>{{LineTitle}}</p>
+        <footer>{{LineTime}}</footer>
+    </blockquote>
+</div>
+<div class="child-box">
+    <div class="mdui-row">
+
+        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in UsaMovieList" on-finish-render>
+            <div class="card-box">
+                <div class="mdui-card" data-bookid="{{item.subject.id}}">
+                    <div class="mdui-card-media">
+                        <img ng-src="https://images.weserv.nl/?url={{item.subject.images.medium}}" crossorigin="anonymous"/>
+                        <!--<p class="img-box" data-img="{{item.bookImg}}"></p>-->
+                        <div class="mdui-card-menu">
+                            <button class="mdui-btn mdui-btn-icon mdui-text-color-white"><i class="mdui-icon material-icons">share</i></button>
+                        </div>
+                    </div>
+                    <div class="mdui-card-primary">
+                        <div class="mdui-card-primary-title">{{item.subject.title}}</div>
+                        <div class="mdui-card-primary-subtitle grade-div">
+                            <!--<i class="mdui-icon material-icons mdui-text-color-orange mdui-typo-subheading-opacity">&#xe838;</i>-->
+                            <i ng-model="item.subject.rating.average" class="allstar allstar{{item.subject.rating.average*10}}"></i>
+                            <em ng-if="item.subject.rating.average" class="mdui-typo-body-2-opacity">{{item.subject.rating.average | number:1}} ({{item.box/10000}}万)</em>
+                            <em ng-if="!item.subject.rating.average" class="mdui-typo-body-2-opacity">评论不足</em>
+                        </div>
+                    </div>
+                    <div class="mdui-card-content">{{item.subject.year}} {{item.subject.genres}} {{item.subject.directors.name}} <em style="font-style: normal;" ng-repeat="i in item.subject.casts">{{i.name}}</em></div>
+                    <div class="mdui-card-actions">
+                        <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="../javascripts/usaMovies.js"></script>
+
