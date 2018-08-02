@@ -1,0 +1,39 @@
+﻿<link rel="stylesheet" href="../stylesheets/newMusics.css">
+
+<div class="mdui-typo">
+    <div class="mdui-chip">
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe030;</i></span>
+        <span class="mdui-chip-title">新歌榜</span>
+    </div>
+    <!--<hr/>-->
+    <div style="height: 40px;width: 100%;"></div>
+    <!--<blockquote>-->
+        <!--<p>{{FirstBookDescipt}}</p>-->
+        <!--<footer>{{FirstBookAuthor}} ——《{{FirstBookTitle}}》</footer>-->
+    <!--</blockquote>-->
+</div>
+<div class="child-box">
+    <div class="mdui-row">
+        <div class="mdui-col-md-10 mdui-col-sm-10 mdui-col-xs-12">
+            <div class="card-box">
+                <ul class="mdui-list" ng-repeat="item in NewMusics">
+                    <!--mdui-list-item-active-->
+                    <li class="mdui-list-item mdui-ripple" data-id="{{item.musicId}}">
+                        <div class="mdui-list-item-avatar">
+                            <img ng-src="https://images.weserv.nl/?url={{item.movieImg}}" onerror="javascript:this.src='/images/noimg.jpg'" crossorigin="anonymous"/>
+                        </div>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">{{item.title}}</div>
+                            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">{{item.info}}</span> - {{item.days}} <i class="mdui-icon material-icons up-icon">&#xe5d8;</i><em class="up-number">{{item.upRate}}</em></div>
+                        </div>
+                        <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple"><i class="mdui-icon material-icons play-icon">&#xe039;</i></button>
+                    </li>
+                    <li class="mdui-divider-inset mdui-m-y-0"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../javascripts/newMusics.js"></script>
+

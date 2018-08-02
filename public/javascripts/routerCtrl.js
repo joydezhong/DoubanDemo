@@ -3,7 +3,7 @@ var DoubanApp = angular.module('DoubanApp', ['ngRoute']);
 
 //获取当前城市的factory
 DoubanApp.factory('GetCityService',function($http){
-   var factory = {};
+   var GetCityService = {};
    //获取当前城市ip
    var req = {
        method: 'GET',
@@ -13,17 +13,15 @@ DoubanApp.factory('GetCityService',function($http){
        },
        data: {}
    }
-   $http(req).then(function(json){
-       var ip = json.data.ip;
-       $http.jsonp('http://ip.taobao.com/service/getIpInfo.php?ip='+ip).then(function(json){
-           console.log(json);
+   // return {
+    GetCityService.getCityIP = function(){
+           return $http(req).then(function(json){
+               return json.data.ip;
+           })
+       }
+   // };
 
-       });
-       factory.CityName = "广州";
-   });
-
-
-    return factory;
+   return GetCityService;
 
 });
 
@@ -75,6 +73,14 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
         .when('/usaMovies', {
             templateUrl: '/view/usaMovies.ejs',
             controller: 'usaMoviesController'
+        })
+        .when('/dayRecommand', {
+            templateUrl: '/view/dayRecommand.ejs',
+            controller: 'dayMusicController'
+        })
+        .when('/newMusics', {
+            templateUrl: '/view/newMusics.ejs',
+            controller: 'newMusicController'
         })
         .otherwise({
            redirectTo: '/error/error404.ejs'

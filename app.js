@@ -4,6 +4,9 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
+
+//city
+var getcity = require('./routes/getcity');
 //book
 var newbooks = require('./routes/newbooks');
 var focusbook = require('./routes/focusbooks');
@@ -15,6 +18,10 @@ var willmovies = require('./routes/willmovies');
 var topmovies = require('./routes/topmovies');
 var weekmovies = require('./routes/weekmovies');
 var usamovies = require('./routes/usamovies');
+//music
+var daymusics = require('./routes/daymusics');
+var newmusics = require('./routes/newmusics');
+
 
 var usersRouter = require('./routes/users');
 
@@ -52,6 +59,9 @@ app.use("/bower_components",express.static(path.join(__dirname, 'bower_component
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+//get city with ip
+app.use('/api/getCity', getcity);
+
 // API books
 app.use('/api/books/newBookList', newbooks);
 app.use('/api/books/focusBookList', focusbook);
@@ -63,6 +73,9 @@ app.use('/api/movies/willMovieList', willmovies);
 app.use('/api/movies/topMovieList', topmovies);
 app.use('/api/movies/weekMovieList', weekmovies);
 app.use('/api/movies/usaMovieList', usamovies);
+//API musics
+app.use('/api/musics/dayMusicList', daymusics);
+app.use('/api/musics/newMusicList', newmusics);
 
 
 module.exports = app;

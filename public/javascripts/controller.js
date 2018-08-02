@@ -183,11 +183,29 @@ DoubanApp.controller('TopBooksController', ['$scope', '$http', function ($scope,
 //正在热映控制器
 DoubanApp.controller('hotMoviesController', ['$scope', '$http', 'GetCityService', function ($scope, $http, GetCityService) {
     $scope.pageClass = 'page-hotMovies';
-
+    var ip = '';
     $http.get('/api/movies/hotMovieList').then(function(json){
         var json = json.data;
         if(json.code == 1){
             $scope.NewMovieList = json.data;
+            GetCityService.getCityIP().then(function(res){ //注入服务 获取当前ip
+                console.log(res);
+                ip = res;
+
+                //获取当前城市ip
+                $http.get('/api/getCity?ip='+ip).then(function (json) {
+                    var cityData = json.data;
+                    if(cityData.code == 1){
+                        $scope.cityID = cityData.data.city;
+                        $scope.cityName = cityData.data.region.split('|')[3].replace("市","");
+                        console.log($scope.cityName);
+                    }else{
+                        console.log(cityData.data);
+                    }
+                });
+
+            });
+
         }else{
             console.log(json.data);
         }
@@ -195,17 +213,35 @@ DoubanApp.controller('hotMoviesController', ['$scope', '$http', 'GetCityService'
         console.log(err);
     });
 
-    //获取当前城市ip
 }]);
 
 //即将上映控制器
-DoubanApp.controller('willMoviesController', ['$scope', '$http', function ($scope, $http) {
+DoubanApp.controller('willMoviesController', ['$scope', '$http', 'GetCityService', function ($scope, $http, GetCityService) {
     $scope.pageClass = 'page-willMovies';
-
+    var ip = '';
     $http.get('/api/movies/willMovieList').then(function(json){
         var json = json.data;
         if(json.code == 1){
             $scope.WillMovieList = json.data;
+
+            GetCityService.getCityIP().then(function(res){ //注入服务 获取当前ip
+                console.log(res);
+                ip = res;
+
+                //获取当前城市ip
+                $http.get('/api/getCity?ip='+ip).then(function (json) {
+                    var cityData = json.data;
+                    if(cityData.code == 1){
+                        $scope.cityID = cityData.data.city;
+                        $scope.cityName = cityData.data.region.split('|')[3].replace("市","");
+                        console.log($scope.cityName);
+                    }else{
+                        console.log(cityData.data);
+                    }
+                });
+
+            });
+
         }else{
             console.log(json.data);
         }
@@ -217,8 +253,27 @@ DoubanApp.controller('willMoviesController', ['$scope', '$http', function ($scop
 }]);
 
 //Top250电影控制器
-DoubanApp.controller('topMoviesController', ['$scope', '$http', function ($scope, $http) {
+DoubanApp.controller('topMoviesController', ['$scope', '$http', 'GetCityService', function ($scope, $http, GetCityService) {
     $scope.pageClass = 'page-topMovies';
+
+    var ip = '';
+    GetCityService.getCityIP().then(function(res){ //注入服务 获取当前ip
+        console.log(res);
+        ip = res;
+
+        //获取当前城市ip
+        $http.get('/api/getCity?ip='+ip).then(function (json) {
+            var cityData = json.data;
+            if(cityData.code == 1){
+                $scope.cityID = cityData.data.city;
+                $scope.cityName = cityData.data.region.split('|')[3].replace("市","");
+                console.log($scope.cityName);
+            }else{
+                console.log(cityData.data);
+            }
+        });
+
+    });
 
     //分页
     $scope.count = 0; //总条数
@@ -353,6 +408,40 @@ DoubanApp.controller('usaMoviesController', ['$scope', '$http', function ($scope
             $scope.LineTime = json.data[0].date;
             $scope.LineTitle = json.data[0].title;
             $scope.UsaMovieList = json.data[0].subjects;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+}]);
+
+//音乐 每日推荐
+DoubanApp.controller('dayMusicController', ['$scope', '$http', function ($scope, $http) {
+    $scope.pageClass = 'page-dayMusic';
+
+    $http.get('/api/musics/dayMusicList').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.DayMusics = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
+}]);
+
+//音乐 新歌榜
+DoubanApp.controller('newMusicController', ['$scope', '$http', function ($scope, $http) {
+    $scope.pageClass = 'page-newMusic';
+
+    $http.get('/api/musics/newMusicList').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.NewMusics = json.data;
         }else{
             console.log(json.data);
         }
