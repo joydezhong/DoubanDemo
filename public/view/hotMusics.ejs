@@ -1,0 +1,54 @@
+﻿<link rel="stylesheet" href="../stylesheets/foundation-pagination.css">
+<link rel="stylesheet" href="../stylesheets/hotMusics.css">
+
+<div class="mdui-typo">
+    <div class="mdui-chip">
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe030;</i></span>
+        <span class="mdui-chip-title">热歌榜</span>
+    </div>
+    <!--<hr/>-->
+    <div style="height: 40px;width: 100%;"></div>
+    <!--<blockquote>-->
+        <!--<p>{{FirstBookDescipt}}</p>-->
+        <!--<footer>{{FirstBookAuthor}} ——《{{FirstBookTitle}}》</footer>-->
+    <!--</blockquote>-->
+</div>
+<div class="child-box">
+    <div class="mdui-row">
+        <div class="mdui-col-md-10 mdui-col-sm-10 mdui-col-xs-12">
+            <div class="card-box">
+                <ul class="mdui-list"  ng-repeat="item in HotMusicList" on-finish-render>
+                    <!--mdui-list-item-active-->
+                    <li class="mdui-list-item mdui-ripple" data-dbid="{{item._id}}"  data-musicid="{{item.musicId}}">
+                        <div class="mdui-list-item-avatar">
+                            <img ng-src="https://images.weserv.nl/?url={{item.musicImg}}" onerror="javascript:this.src='/images/noimg.jpg'" crossorigin="anonymous"/>
+                        </div>
+                        <div class="mdui-list-item-content">
+                            <div class="mdui-list-item-title">{{item.title}}</div>
+                            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">{{item.typeInfo}}</span> - {{item.remark}}</div>
+                            <div class="mdui-list-item-text mdui-list-item-one-line">
+                                <i ng-model="item.grade" class="allstar allstar{{item.grade*10}}"></i>
+                                <em ng-if="item.grade" class="mdui-typo-body-2-opacity">{{item.grade | number:1}}</em>
+                                <em ng-if="!item.grade" class="mdui-typo-body-2-opacity">评论不足</em>
+                            </div>
+                        </div>
+                        <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple"><i class="mdui-icon material-icons play-icon">&#xe039;</i></button>
+                    </li>
+                    <li class="mdui-divider-inset mdui-m-y-0"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--pagintaion-->
+    <nav aria-label="Pagination" class="pag-nav" style="display: none;">
+        <ul class="pagination text-center">
+            <li class="pagination-previous" ng-class="{true:'disabled'}[p_current==1]"><a href="javascript:void(0);" ng-click="p_prev()" aria-label="Previous page">前页</a></li>
+            <li ng-repeat="page in pages" ng-class="{true:'current'}[p_current==page]"><a href="javascript:void(0);" ng-click="load_page(page)">{{ page }}</a></li>
+            <li class="pagination-next" ng-class="{true:'disabled'}[p_current==p_all_page]"><a href="javascript:void(0);" ng-click="p_next()" aria-label="Next page">后页</a></li>
+        </ul>
+    </nav>
+    <!--pagintaion end-->
+</div>
+
+<script type="text/javascript" src="../javascripts/hotMusics.js"></script>
+

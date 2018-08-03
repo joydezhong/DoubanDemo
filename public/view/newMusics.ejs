@@ -24,7 +24,7 @@
                         </div>
                         <div class="mdui-list-item-content">
                             <div class="mdui-list-item-title">{{item.title}}</div>
-                            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">{{item.info}}</span> - {{item.days}} <i class="mdui-icon material-icons up-icon">&#xe5d8;</i><em class="up-number">{{item.upRate}}</em></div>
+                            <div class="mdui-list-item-text mdui-list-item-one-line"><span class="mdui-text-color-theme-text">{{item.info}}</span> - {{item.days}} <i class="mdui-icon material-icons up-icon" ng-if="item.trend == 1">&#xe5d8;</i><i class="mdui-icon material-icons down-icon" ng-if="item.trend == 0">&#xe915;</i><i class="mdui-icon material-icons stay-icon" ng-if="item.trend == -1">&#xe5db;</i><em class="up-number">{{item.upRate}}</em></div>
                         </div>
                         <button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple"><i class="mdui-icon material-icons play-icon">&#xe039;</i></button>
                     </li>

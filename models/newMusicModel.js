@@ -9,7 +9,8 @@ var NewMusicSchema = new Schema({
     days: String,
     movieImg: String,
     upRate: Number,
-    info: String
+    info: String,
+    trend: Number
 });
 
 module.exports = mongoose.model('NewMusic', NewMusicSchema, 'newMusics');

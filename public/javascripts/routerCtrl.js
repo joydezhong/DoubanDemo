@@ -82,6 +82,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/newMusics.ejs',
             controller: 'newMusicController'
         })
+        .when('/hotMusics', {
+            templateUrl: '/view/hotMusics.ejs',
+            controller: 'hotMusicController'
+        })
         .otherwise({
            redirectTo: '/error/error404.ejs'
         });

@@ -43,27 +43,16 @@
     }
 }
 
-
-.play-icon{
-    color: #9e9e9e;
+.mdui-list-item-avatar{
+    min-width: 80px;
+    max-width: 80px;
+    height: 80px;
 }
-
-.up-icon{
-    font-size: 14px;
-    padding-left: 10px;
-    color: #ff81a4;
+.mdui-divider-inset{
+    margin-left: 110px;
 }
-.down-icon{
-    font-size: 14px;
-    padding-left: 10px;
-    color: #6899f9;
-}
-.stay-icon{
-    font-size: 14px;
-    padding-left: 10px;
-    color: #a7aad2;
-}
-.up-number{
-    font-size: 12px;
-    font-style: normal;
+.mdui-list-item-avatar img{
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }

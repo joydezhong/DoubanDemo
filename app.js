@@ -21,6 +21,7 @@ var usamovies = require('./routes/usamovies');
 //music
 var daymusics = require('./routes/daymusics');
 var newmusics = require('./routes/newmusics');
+var hotmusics = require('./routes/hotmusics');
 
 
 var usersRouter = require('./routes/users');
@@ -76,6 +77,7 @@ app.use('/api/movies/usaMovieList', usamovies);
 //API musics
 app.use('/api/musics/dayMusicList', daymusics);
 app.use('/api/musics/newMusicList', newmusics);
+app.use('/api/musics/hotMusicList', hotmusics);
 
 
 module.exports = app;

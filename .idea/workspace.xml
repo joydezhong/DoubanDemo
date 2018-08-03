@@ -8,15 +8,15 @@
   <component name="ChangeListManager">
     <list default="true" id="2878eb5f-aff3-4320-87e6-5f6b666ceab3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newMusics.bson.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/Douban/newMusics.bson.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newMusics.metadata.json.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dataBase/Douban/newMusics.metadata.json.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/newMusicModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/newMusicModel.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/routerCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/routerCtrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/view/hotMovies.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/view/hotMovies.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/view/topMovies.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/view/topMovies.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/view/willMovies.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/view/willMovies.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/hotmovies.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/hotmovies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/stylesheets/newMusics.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/stylesheets/newMusics.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/view/newMusics.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/view/newMusics.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -30,56 +30,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app.js">
+      <file leaf-file-name="hotmusics.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/hotmusics.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="781">
-              <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+            <state relative-caret-position="378">
+              <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newmusics.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/newmusics.js">
+      <file leaf-file-name="hotMusicModel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/hotMusicModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+            <state relative-caret-position="504">
+              <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newMusicModel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/newMusicModel.js">
+      <file leaf-file-name="hotMusics.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/view/hotMusics.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+            <state relative-caret-position="452">
+              <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newMusics.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/view/newMusics.ejs">
+      <file leaf-file-name="hotMusics.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/stylesheets/hotMusics.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+            <state relative-caret-position="613">
+              <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newMusics.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/newMusics.css">
+      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dayRecommand.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/view/dayRecommand.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
+            <state relative-caret-position="378">
+              <caret line="90" column="79" lean-forward="true" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
             </state>
           </provider>
         </entry>
@@ -87,31 +78,38 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="433" selection-start-line="433" selection-end-line="433" />
+            <state relative-caret-position="326">
+              <caret line="462" column="22" lean-forward="true" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#9777#10123#0" />
-                <element signature="e#10228#10668#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dayRecommand.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/dayRecommand.css">
+      <file leaf-file-name="routerCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/routerCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
+            <state relative-caret-position="424">
+              <caret line="86" column="43" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routerCtrl.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/javascripts/routerCtrl.js">
+      <file leaf-file-name="newMusics.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/view/newMusics.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+            <state relative-caret-position="361">
+              <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="topBooks.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/view/topBooks.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="21">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="71" />
             </state>
           </provider>
         </entry>
@@ -140,10 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/topBookModel.js.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/topBooks.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/topBooks.css" />
-        <option value="$PROJECT_DIR$/public/stylesheets/foundation-pagination.css" />
         <option value="$PROJECT_DIR$/routes/topbooks.js" />
         <option value="$PROJECT_DIR$/models/topBookModel.js" />
         <option value="$PROJECT_DIR$/public/view/pagination.ejs" />
@@ -172,7 +166,6 @@
         <option value="$PROJECT_DIR$/models/usaMovieModel.js" />
         <option value="$PROJECT_DIR$/public/view/usaMovies.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/usaMovies.css" />
-        <option value="$PROJECT_DIR$/public/index.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/dayRecommand.js" />
         <option value="$PROJECT_DIR$/routes/hotmovies.js" />
         <option value="$PROJECT_DIR$/bower_components/ipregion/ip2region.js" />
@@ -184,13 +177,18 @@
         <option value="$PROJECT_DIR$/models/dayMusicModel.js" />
         <option value="$PROJECT_DIR$/public/view/dayRecommand.ejs" />
         <option value="$PROJECT_DIR$/routes/newmusics.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/controller.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/dayRecommand.css" />
-        <option value="$PROJECT_DIR$/public/javascripts/routerCtrl.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/models/newMusicModel.js" />
-        <option value="$PROJECT_DIR$/public/stylesheets/newMusics.css" />
         <option value="$PROJECT_DIR$/public/view/newMusics.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/newMusics.css" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/routes/hotmusics.js" />
+        <option value="$PROJECT_DIR$/public/index.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/routerCtrl.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/controller.js" />
+        <option value="$PROJECT_DIR$/models/hotMusicModel.js" />
+        <option value="$PROJECT_DIR$/public/view/hotMusics.ejs" />
+        <option value="$PROJECT_DIR$/public/stylesheets/hotMusics.css" />
       </list>
     </option>
   </component>
@@ -255,6 +253,12 @@
               <item name="DoubanDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="DoubanDemo" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="javascripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DoubanDemo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DoubanDemo" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -278,7 +282,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.5.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myPaCong/SimpleCrawler" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -287,11 +291,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myMEAN\DoubanDemo\public\stylesheets" />
+      <recent name="D:\myMEAN\DoubanDemo\public\javascripts" />
+      <recent name="D:\myMEAN\DoubanDemo\public\view" />
       <recent name="D:\myMEAN\DoubanDemo\models" />
       <recent name="D:\myMEAN\DoubanDemo\routes" />
-      <recent name="D:\myMEAN\DoubanDemo\bower_components\ipregion" />
-      <recent name="D:\myMEAN\DoubanDemo\public\images" />
-      <recent name="D:\myMEAN\DoubanDemo\public\javascripts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -333,24 +337,25 @@
       <workItem from="1532932850955" duration="13005000" />
       <workItem from="1533018715302" duration="10357000" />
       <workItem from="1533091551445" duration="13941000" />
-      <workItem from="1533176024973" duration="24275000" />
+      <workItem from="1533176024973" duration="24924000" />
+      <workItem from="1533263688302" duration="4440000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="225279000" />
+    <option name="totallyTimeSpent" value="230368000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.12012645" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.12223393" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.25504783" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18627451" />
       <window_info id="npm" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18627451" />
       <window_info id="Structure" order="1" sideWeight="0.50217867" side_tool="true" weight="0.12012645" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -368,19 +373,19 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.18065888" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49893844" visible="true" weight="0.1203125" />
       <window_info id="Structure" order="1" sideWeight="0.50106156" side_tool="true" weight="0.116145834" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.25504783" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32943678" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Favorites" order="3" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -396,35 +401,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/newMovieModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/error404.html" />
-    <entry file="file://$PROJECT_DIR$/public/error/error404.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="395" selection-start-line="395" selection-end-line="395" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/willMovieModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -446,27 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/topBookModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/topbooks.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="41" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/view/topBooks.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="71" />
         </state>
       </provider>
     </entry>
@@ -563,13 +518,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/hotmovies.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -650,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/newmusics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/daymusics.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="294">
@@ -673,62 +614,126 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/dayRecommand.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
+        <state relative-caret-position="819">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="433" selection-start-line="433" selection-end-line="433" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#9777#10123#0" />
-            <element signature="e#10228#10668#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/newMusicModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/view/dayRecommand.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
+        <state relative-caret-position="399">
           <caret line="19" column="39" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/newMusics.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="56" column="20" selection-start-line="56" selection-start-column="20" selection-end-line="56" selection-end-column="20" />
+        <state relative-caret-position="697">
+          <caret line="59" column="1" lean-forward="true" selection-start-line="59" selection-start-column="1" selection-end-line="59" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/newMusicModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="3" lean-forward="true" selection-start-line="13" selection-start-column="3" selection-end-line="13" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/newmusics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="781">
-          <caret line="76" column="47" selection-start-line="76" selection-start-column="47" selection-end-line="76" selection-end-column="47" />
+        <state relative-caret-position="504">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/topBookModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/topbooks.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="41" column="7" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="41" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/hotmusics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="26" lean-forward="true" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/view/newMusics.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        <state relative-caret-position="361">
+          <caret line="29" column="25" lean-forward="true" selection-start-line="29" selection-start-column="25" selection-end-line="29" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="90" column="79" lean-forward="true" selection-start-line="90" selection-start-column="79" selection-end-line="90" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/routerCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="74" column="45" lean-forward="true" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+        <state relative-caret-position="424">
+          <caret line="86" column="43" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/hotMusics.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/view/topBooks.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="462" column="22" lean-forward="true" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/hotMusicModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/view/hotMusics.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="452">
+          <caret line="49" column="25" lean-forward="true" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/hotMusics.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="613">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
         </state>
       </provider>
     </entry>
