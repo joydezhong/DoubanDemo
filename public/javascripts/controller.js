@@ -272,7 +272,6 @@ DoubanApp.controller('topMoviesController', ['$scope', '$http', 'GetCityService'
                 console.log(cityData.data);
             }
         });
-
     });
 
     //分页
@@ -377,7 +376,6 @@ DoubanApp.controller('topMoviesController', ['$scope', '$http', 'GetCityService'
     })
 
 
-    //获取当前城市ip
 }]);
 
 //周口碑榜控制器
@@ -540,10 +538,45 @@ DoubanApp.controller('hotMusicController', ['$scope', '$http', function ($scope,
         return indexes;
     };
 
-
 //渲染完成执行
     $scope.$on('ngRepeatFinished', function(ngRepeatFinishedEvent){
         $(".child-box .pag-nav").css('display','block');
         console.log('renderFinished');
     })
+}]);
+
+
+//热门活动
+DoubanApp.controller('hotActiveController', ['$scope', '$http', 'GetCityService', function ($scope, $http, GetCityService) {
+    $scope.pageClass = 'page-hotActive';
+
+    var ip = '';
+    GetCityService.getCityIP().then(function(res){ //注入服务 获取当前ip
+        console.log(res);
+        ip = res;
+
+        //获取当前城市ip
+        $http.get('/api/getCity?ip='+ip).then(function (json) {
+            var cityData = json.data;
+            if(cityData.code == 1){
+                $scope.cityID = cityData.data.city;
+                $scope.cityName = cityData.data.region.split('|')[3].replace("市","");
+                console.log($scope.cityName);
+            }else{
+                console.log(cityData.data);
+            }
+        });
+    });
+
+    $http.get('/api/actives/hotActiveList').then(function(json){
+        var json = json.data;
+        if(json.code == 1){
+            $scope.HotActives = json.data;
+        }else{
+            console.log(json.data);
+        }
+    },function(err){
+        console.log(err);
+    });
+
 }]);

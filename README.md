@@ -13,3 +13,11 @@
 `dataBase`为所需数据文件夹，可直接导入Robo Studio 3T。
 
 更多功能正在加载中...
+
+调试步骤：
+
+> 1. 本地安装mongodb环境，导入`database`文件下的数据。
+> 2. `bower install`安装bower依赖。
+> 3. `npm install`安装npm依赖。
+> 4. `npm start`或`nodemon`启动项目。
+> 也可导入WebStorm下进行启动。

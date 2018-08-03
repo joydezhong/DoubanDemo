@@ -1,0 +1,35 @@
+﻿<link rel="stylesheet" href="../stylesheets/hotActives.css">
+
+<div class="mdui-typo">
+    <div class="mdui-chip">
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">&#xe878;</i></span>
+        <span class="mdui-chip-title">热门活动</span>
+    </div>
+    <!--<hr/>-->
+    <!--<div style="height: 40px;width: 100%;"></div>-->
+    <blockquote>
+        <h3 data-id="{{cityID}}">电影票——{{cityName}} <small><a href="" style="vertical-align: bottom">切换城市</a></small></h3>
+    </blockquote>
+</div>
+<div class="child-box">
+    <div class="mdui-row">
+        <div class="mdui-col-md-3 mdui-col-sm-6 mdui-col-xs-12" ng-repeat="item in HotActives">
+            <div class="card-box">
+                <div class="mdui-grid-tile" data-eventid="{{item.eventId}}">
+                    <img ng-src="https://images.weserv.nl/?url={{item.eventImg}}" crossorigin="anonymous"/>
+                    <div class="mdui-grid-tile-actions">
+                        <div class="mdui-grid-tile-text">
+                            <div class="mdui-grid-tile-title"><a href="" style="color: #fff;text-decoration: none">{{item.title}}</a></div>
+                        </div>
+                        <!--<div class="mdui-grid-tile-buttons">-->
+                            <!--<button class="mdui-btn mdui-btn-icon mdui-btn-dense mdui-ripple"><i class="mdui-icon material-icons play-icon">&#xe039;</i></button>-->
+                        <!--</div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="../javascripts/hotActives.js"></script>
+

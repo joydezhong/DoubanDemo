@@ -74,8 +74,8 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/usaMovies.ejs',
             controller: 'usaMoviesController'
         })
-        .when('/dayRecommand', {
-            templateUrl: '/view/dayRecommand.ejs',
+        .when('/dayMusics', {
+            templateUrl: '/view/dayMusics.ejs',
             controller: 'dayMusicController'
         })
         .when('/newMusics', {
@@ -85,6 +85,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
         .when('/hotMusics', {
             templateUrl: '/view/hotMusics.ejs',
             controller: 'hotMusicController'
+        })
+        .when('/hotActives', {
+            templateUrl: '/view/hotActives.ejs',
+            controller: 'hotActiveController'
         })
         .otherwise({
            redirectTo: '/error/error404.ejs'
