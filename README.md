@@ -10,7 +10,7 @@
 
 获取当前城市使用公共api `https://ipapi.co/json/` 和 ip2region库。
 
-`dataBase`为所需数据文件夹，可直接导入Robo Studio 3T。
+`dataBase`为所需数据文件夹，可直接导入Robo Studio 3T，导入格式为mongodump archive。
 
 更多功能正在加载中...
 

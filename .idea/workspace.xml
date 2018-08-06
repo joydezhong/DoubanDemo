@@ -1,20 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/public/stylesheets/newBooks.css" />
-    <bookmark url="file://$PROJECT_DIR$/public/javascripts/controller.js" line="252" />
-    <bookmark url="file://$PROJECT_DIR$/public/view/newMusics.ejs" line="22" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="2878eb5f-aff3-4320-87e6-5f6b666ceab3" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/dayMusic.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/dayMusic.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusbook.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusbook.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusnobook.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusnobook.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/hotMovies.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/hotMovies.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newMusics.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newMusics.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newbooks.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newbooks.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMovieList.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMovieList.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMusicList.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMusicList.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooklist.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooklist.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooks.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooks.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/usaMovies.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/usaMovies.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/weeklyMovies.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/weeklyMovies.metadata.json.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/willMovies.bson.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dataBase/Douban/willMovies.metadata.json.gz" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/public/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/javascripts/routerCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/routerCtrl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/view/dayRecommand.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/view/dayMusics.ejs" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +49,26 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="658">
-              <caret line="84" column="35" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="35" />
+            <state relative-caret-position="1659">
+              <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="models.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/models.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -41,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/routes/hotactives.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="294">
-              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+              <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -50,19 +86,16 @@
         <entry file="file://$PROJECT_DIR$/models/hotActiveModel.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="hotActives.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="hotActives.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/view/hotActives.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-              <folding>
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="399">
+              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
             </state>
           </provider>
         </entry>
@@ -70,8 +103,8 @@
       <file leaf-file-name="controller.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="427">
-              <caret line="561" column="51" lean-forward="true" selection-start-line="561" selection-start-column="51" selection-end-line="561" selection-end-column="51" />
+            <state relative-caret-position="11760">
+              <caret line="561" column="51" selection-start-line="561" selection-start-column="51" selection-end-line="561" selection-end-column="51" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -82,8 +115,8 @@
       <file leaf-file-name="routerCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/routerCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="91" column="10" lean-forward="true" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
+            <state relative-caret-position="1974">
+              <caret line="94" column="11" lean-forward="true" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -94,8 +127,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -112,7 +145,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/view/newBooks.ejs" />
         <option value="$PROJECT_DIR$/public/view/focusBooks.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/hotMovies.js" />
         <option value="$PROJECT_DIR$/models/newMovieModel.js" />
@@ -154,15 +186,16 @@
         <option value="$PROJECT_DIR$/models/hotMusicModel.js" />
         <option value="$PROJECT_DIR$/public/view/hotMusics.ejs" />
         <option value="$PROJECT_DIR$/public/stylesheets/hotMusics.css" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/public/index.ejs" />
         <option value="$PROJECT_DIR$/public/javascripts/index.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/routes/hotactives.js" />
         <option value="$PROJECT_DIR$/models/hotActiveModel.js" />
-        <option value="$PROJECT_DIR$/public/javascripts/routerCtrl.js" />
         <option value="$PROJECT_DIR$/public/javascripts/controller.js" />
         <option value="$PROJECT_DIR$/public/view/hotActives.ejs" />
+        <option value="$PROJECT_DIR$/public/index.ejs" />
+        <option value="$PROJECT_DIR$/public/javascripts/routerCtrl.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/models/models.js" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -199,7 +232,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -227,12 +259,6 @@
               <item name="DoubanDemo" type="b2602c69:ProjectViewProjectNode" />
               <item name="DoubanDemo" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="stylesheets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="DoubanDemo" type="b2602c69:ProjectViewProjectNode" />
-              <item name="DoubanDemo" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -244,13 +270,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="10.5.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../authorVisit" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -259,9 +286,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\myMEAN\DoubanDemo\public\view" />
       <recent name="D:\myMEAN\DoubanDemo\public\javascripts" />
       <recent name="D:\myMEAN\DoubanDemo\public\stylesheets" />
-      <recent name="D:\myMEAN\DoubanDemo\public\view" />
       <recent name="D:\myMEAN\DoubanDemo\models" />
       <recent name="D:\myMEAN\DoubanDemo\routes" />
     </key>
@@ -307,34 +334,37 @@
       <workItem from="1533091551445" duration="13941000" />
       <workItem from="1533176024973" duration="24924000" />
       <workItem from="1533263688302" duration="11542000" />
+      <workItem from="1533285988109" duration="3163000" />
+      <workItem from="1533526065950" duration="1629000" />
+      <workItem from="1533551639385" duration="83000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="237470000" />
+    <option name="totallyTimeSpent" value="242345000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.115911484" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49782136" visible="true" weight="0.12065332" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.25504783" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.18627451" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.18627451" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" sideWeight="0.50217867" side_tool="true" weight="0.12012645" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32897604" />
     </layout>
     <layout-to-restore>
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -369,37 +399,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/weekMovieModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="23" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/weekMovies.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/weekmovies.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/usaMovies.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/usaMovies.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/usaMovieModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="231">
@@ -591,20 +590,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/hotMusics.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1008">
@@ -626,24 +611,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/hotactives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/hotActiveModel.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -663,44 +634,98 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/hotActives.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/index.ejs">
+    <entry file="file://$PROJECT_DIR$/public/view/hotActives.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-420">
-          <caret line="52" column="60" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="60" />
+        <state relative-caret-position="399">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="658">
-          <caret line="84" column="35" selection-start-line="84" selection-start-column="9" selection-end-line="84" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/routerCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="91" column="10" lean-forward="true" selection-start-line="91" selection-start-column="10" selection-end-line="91" selection-end-column="10" />
+        <state relative-caret-position="147">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="561" column="51" lean-forward="true" selection-start-line="561" selection-start-column="51" selection-end-line="561" selection-end-column="51" />
+        <state relative-caret-position="11760">
+          <caret line="561" column="51" selection-start-line="561" selection-start-column="51" selection-end-line="561" selection-end-column="51" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/view/hotActives.ejs">
+    <entry file="file://$PROJECT_DIR$/routes/hotactives.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="57" lean-forward="true" selection-start-line="20" selection-start-column="57" selection-end-line="20" selection-end-column="57" />
-          <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="294">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/error/error404.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="25" column="51" lean-forward="true" selection-start-line="25" selection-start-column="51" selection-end-line="25" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/view/error404.ejs" />
+    <entry file="file://$PROJECT_DIR$/public/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="59" column="38" selection-start-line="59" selection-start-column="38" selection-end-line="59" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="2" lean-forward="true" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/routerCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1974">
+          <caret line="94" column="11" lean-forward="true" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="79" column="47" selection-start-line="79" selection-start-column="47" selection-end-line="79" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/newBookModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="3" lean-forward="true" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/models.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

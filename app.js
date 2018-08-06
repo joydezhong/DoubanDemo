@@ -63,6 +63,9 @@ app.use("/bower_components",express.static(path.join(__dirname, 'bower_component
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
+// login register API
+
+
 //get city with ip
 app.use('/api/getCity', getcity);
 
@@ -83,6 +86,11 @@ app.use('/api/musics/newMusicList', newmusics);
 app.use('/api/musics/hotMusicList', hotmusics);
 //API actives
 app.use('/api/actives/hotActiveList', hotactives);
+
+// API error
+app.get('*', function(req, res) {
+    res.render('/error/error404.ejs',{ title: '', data:''});
+})
 
 
 module.exports = app;
