@@ -17,7 +17,11 @@
 调试步骤：
 
 > 1. 本地安装mongodb环境，导入`database`文件下的数据。
-> 2. `bower install`安装bower依赖。
-> 3. `npm install`安装npm依赖。
+> 2. `npm install`安装npm依赖。
+> 3. 全局安装`bower`和`nodemon`。
+> 3. `bower install`安装bower依赖。
 > 4. `npm start`或`nodemon`启动项目。
 > 也可导入WebStorm下进行启动。
+
+
+查看演示： `http://111.230.224.91:3000/#/`

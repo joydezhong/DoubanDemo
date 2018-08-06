@@ -2,37 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2878eb5f-aff3-4320-87e6-5f6b666ceab3" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/dayMusic.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/dayMusic.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusbook.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusbook.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusnobook.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/focusnobook.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/hotMovies.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/hotMovies.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newMusics.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newMusics.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newbooks.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/newbooks.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMovieList.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMovieList.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMusicList.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topMusicList.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooklist.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooklist.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooks.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/topbooks.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/usaMovies.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/usaMovies.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/weeklyMovies.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/weeklyMovies.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/willMovies.bson.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataBase/Douban/willMovies.metadata.json.gz" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/javascripts/routerCtrl.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/javascripts/routerCtrl.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -64,11 +34,20 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="546">
+              <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -336,12 +315,12 @@
       <workItem from="1533263688302" duration="11542000" />
       <workItem from="1533285988109" duration="3163000" />
       <workItem from="1533526065950" duration="1629000" />
-      <workItem from="1533551639385" duration="83000" />
+      <workItem from="1533551639385" duration="1395000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="242345000" />
+    <option name="totallyTimeSpent" value="243657000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -641,13 +620,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/controller.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11760">
@@ -722,10 +694,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="546">
+          <caret line="26" column="37" lean-forward="true" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
         </state>
       </provider>
     </entry>
