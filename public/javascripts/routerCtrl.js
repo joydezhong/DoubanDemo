@@ -25,6 +25,17 @@ DoubanApp.factory('GetCityService',function($http){
 
 });
 
+//自定义自定和模板（登录注册对话框）
+DoubanApp.directive("formDialog", function(){
+    return {
+        templateUrl: "template/dialog.ejs",
+        restrict: "C",
+        compile: function(){
+            console.log("directive render success!");
+        }
+    }
+});
+
 //渲染完成
 DoubanApp.directive('onFinishRender', function($timeout){
     return{
