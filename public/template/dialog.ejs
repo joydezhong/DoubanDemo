@@ -7,13 +7,13 @@
         <div class="mdui-dialog-title mdui-color-indigo">登录</div>
         <form>
             <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom mdui-textfield-invalid-html5">
-                <label class="mdui-textfield-label">用户名或邮箱</label>
-                <input class="mdui-textfield-input" name="name" type="text" required="">
+                <label class="mdui-textfield-label">用户名或邮箱/admin</label>
+                <input class="mdui-textfield-input log-user" name="name" type="text" required="">
                 <div class="mdui-textfield-error">账号不能为空</div>
             </div>
             <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
-                <label class="mdui-textfield-label">密码</label>
-                <input class="mdui-textfield-input" name="password" type="password" required="">
+                <label class="mdui-textfield-label">密码/123456</label>
+                <input class="mdui-textfield-input log-pwd" name="password" type="password" required="">
                 <div class="mdui-textfield-error">密码不能为空</div>
             </div>
             <div class="actions mdui-clearfix">
@@ -24,7 +24,7 @@
                     <!--</li>-->
                     <li class="mdui-menu-item mc-register"><a class="mdui-ripple mc-register-trigger" mdui-dialog="{target:'#register-modal', modal: true}">创建新账号</a></li>
                 </ul>
-                <button type="submit" class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-float-right">登录</button>
+                <button type="submit" class="mdui-btn mdui-btn-raised mdui-color-theme-accent mdui-float-right btn-login">登录</button>
             </div>
         </form>
     </div>
@@ -37,12 +37,12 @@
         <form>
             <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom mdui-textfield-invalid-html5">
                 <label class="mdui-textfield-label">用户名或邮箱</label>
-                <input class="mdui-textfield-input" name="name" type="text" required="">
+                <input class="mdui-textfield-input" id="reg-user" name="name" type="text" required="">
                 <div class="mdui-textfield-error">账号不能为空</div>
             </div>
             <div class="mdui-textfield mdui-textfield-floating-label mdui-textfield-has-bottom">
                 <label class="mdui-textfield-label">密码</label>
-                <input class="mdui-textfield-input" name="password" type="password" required="">
+                <input class="mdui-textfield-input" id="reg-pwd" name="password" type="password" required="">
                 <div class="mdui-textfield-error">密码不能为空</div>
             </div>
             <div class="actions mdui-clearfix">

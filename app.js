@@ -1,10 +1,15 @@
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
+var session = require('express-session');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
 
+//login register
+var registerRouter = require('./routes/register');
+var loginRouter = require('./routes/login');
+var exitRouter = require('./routes/exit');
 //city
 var getcity = require('./routes/getcity');
 //book
@@ -46,6 +51,22 @@ mongoose.Promise = global.Promise;
 var db = mongoose.connection;
 db.on('error',console.error.bind(console, 'MongoDB connection error:'));
 
+//use session
+app.use(session({
+    secret: 'my application',
+    resave: true,
+    saveUninitialized: false,
+    cookie: {
+        maxAge: 1000*60*10 //过期时间
+    }
+}));
+app.use(function(req, res, next){
+    res.locals.user = req.session.user;
+    var err = req.session.error;
+    if(err) res.locals.message = '<div style="margin-bottom: 20px; color: red;">' + err + '</div>';
+    next();
+});
+
 // view engine setup
 app.set('views', path.join(__dirname, 'public'));
 app.engine('ejs',require('ejs').__express);
@@ -64,7 +85,9 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
 // login register API
-
+app.use('/api/register', registerRouter);
+app.use('/api/login', loginRouter);
+app.use('/api/exit', exitRouter);
 
 //get city with ip
 app.use('/api/getCity', getcity);

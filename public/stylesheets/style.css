@@ -88,3 +88,7 @@ a {
 .allstar0 {
   background-position: 0 -110px
 }
+
+.top-exit{
+  display: none;
+}
