@@ -30,6 +30,8 @@ var hotmusics = require('./routes/hotmusics');
 //actives
 var hotactives = require('./routes/hotactives');
 
+//details
+// var bookdetails = require('./routes/bookdetails');
 
 
 var usersRouter = require('./routes/users');
@@ -110,9 +112,12 @@ app.use('/api/musics/hotMusicList', hotmusics);
 //API actives
 app.use('/api/actives/hotActiveList', hotactives);
 
+//details
+// app.use('/bookDetails', bookdetails);
+
 // API error
 app.get('*', function(req, res) {
-    res.render('/error/error404.ejs',{ title: '', data:''});
+    res.render('../public/error/error404',{ title: '', data:''});
 })
 
 

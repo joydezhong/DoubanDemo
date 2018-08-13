@@ -6,5 +6,4 @@ router.get('/',function(req, res, next){
     res.redirect('/#/index');   //重定向首页
 });
 
-
 module.exports = router;

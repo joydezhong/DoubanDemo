@@ -580,3 +580,97 @@ DoubanApp.controller('hotActiveController', ['$scope', '$http', 'GetCityService'
     });
 
 }]);
+
+
+
+
+
+/* 详情类 控制器 */
+
+//图书详情
+DoubanApp.controller('bookDetailController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+    $scope.pageClass = 'page-bookDetail';
+    var bookId = $location.search().book;
+
+    $.ajax({
+        type: "get",
+        url: "https://api.douban.com/v2/book/"+bookId,
+        contentType: "text/html",
+        dataType: 'jsonp',
+        async: false,
+        jsonp: "callback",
+        success: function(json){
+            if(json.title){
+                $('.my-title').text(json.title);
+                setTimeout(function(){ $('.my-img').attr('src','https://images.weserv.nl/?url='+json.image.replace(/^https:/g,"")); },1200);
+
+                $('.my-author').text(json.author?json.author:'不详');
+                $('.my-publier').text(json.publisher?json.publisher:'不详');
+                $('.my-translator').text(json.translator.length?json.translator:'不详');
+                $('.my-pubdate').text(json.pubdate?json.pubdate:'不详');
+                $('.my-pages').text(json.pages?json.pages:'不详');
+                $('.my-price').text(json.price?json.price:'不详');
+                $('.my-binding').text(json.binding?json.binding:'不详');
+                $('.my-series').text(json.series?json.series.title:'不详');
+                $('.my-isbn13').text(json.isbn13?json.isbn13:'不详');
+                var _tags = "";
+                for(var i = 0; i < json.tags.length; i++){
+                    if(i == 0){
+                        _tags += json.tags[i].name;
+                    }else{
+                        _tags += '/' + json.tags[i].name;
+                    }
+                }
+                $('.my-tags').text(_tags);
+                $('.allstar').addClass('allstar'+json.rating.average*10);
+                $('.my-grad').text(Math.ceil(json.rating.average)?json.rating.average:'评论不足');
+                $('.my-author-info').html("<pre>"+json.author_intro+"</pre>");
+                $('.my-content').html("<pre>"+json.summary+"</pre>");
+                $('.my-catalog').html("<pre>"+json.catalog+"</pre>");
+
+
+                // $scope.b_title = json.title;
+                // $scope.b_img = json.image.replace(/^https:/g,"");
+                // $scope.b_author = json.author;
+                // $scope.b_publisher = json.publisher;
+                // $scope.b_translator = json.translator;
+                // $scope.b_pubdate = json.pubdate;
+                // $scope.b_pages = json.pages;
+                // $scope.b_price = json.price;
+                // $scope.b_binding = json.binding;
+                // $scope.b_series = json.series;
+                // $scope.b_ISBN = json.isbn13;
+                // $scope.b_tags = json.tags;
+                // $scope.b_author_intro = json.author_intro;
+                // $scope.b_summary = json.summary;
+                // $scope.b_catalog = json.catalog;
+                // $scope.b_remark = json.rating.average;
+            }else{
+                console.log(json);
+            }
+        },
+        error: function(xhr,status,thr){
+            console.log(xhr);
+            console.log(status);
+            console.log(thr);
+        }
+    });
+
+    // $http.jsonp('https://api.douban.com/v2/book/'+bookId+'?callback=JSON_CALLBACK').then(function(json){
+    //     var json = json.data;
+    //     console.log(json);
+    //     if(json.code == 1){
+    //         console.log(json.data);
+    //     }else{
+    //         console.log(json.data);
+    //     }
+    // },function(err){
+    //     console.log(err);
+    // });
+    //
+    // $timeout(function(){
+    //     console.log($window);
+    // },1000);
+
+
+}]);

@@ -1,0 +1,25 @@
+/*common*/
+.cat{
+    color: #666666;
+}
+.mdui-btn-mini{
+    min-width: 78px;
+}
+.my-line{
+    margin-top: 38px;
+    margin-bottom: 8px;
+}
+.gap-28{
+    height: 28px;
+}
+.my-author-info pre, .my-content pre, .my-catalog pre{
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+.my-grad{
+    font-size: 12px;
+    opacity: .54;
+}

@@ -1,6 +1,7 @@
 //    ng 路由和控制器配置
 var DoubanApp = angular.module('DoubanApp', ['ngRoute']);
 
+
 //获取当前城市的factory
 DoubanApp.factory('GetCityService',function($http){
    var GetCityService = {};
@@ -100,6 +101,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
         .when('/hotActives', {
             templateUrl: '/view/hotActives.ejs',
             controller: 'hotActiveController'
+        })
+        .when('/bookDetails', {
+            templateUrl: '/view/bookDetails.ejs',
+            controller: 'bookDetailController'
         })
         .otherwise({
            redirectTo: '/'

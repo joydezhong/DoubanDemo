@@ -1,0 +1,83 @@
+<link rel="stylesheet" href="../stylesheets/bookDetails.css">
+
+<div class="mdui-typo">
+    <div class="mdui-chip">
+        <span class="mdui-chip-icon"><i class="mdui-icon material-icons">library_books</i></span>
+        <span class="mdui-chip-title">图书详情</span>
+    </div>
+    <!--<hr/>-->
+    <blockquote>
+        <p></p>
+        <footer></footer>
+    </blockquote>
+</div>
+<div class="child-box">
+    <div class="mdui-container-fluid">
+        <div class="mdui-typo">
+            <h1 class="my-title"></h1>
+        </div>
+        <div class="mdui-row">
+            <div class="mdui-col-xs-12 mdui-col-sm-4 mdui-col-md-3">
+                <div class="mdui-grid-tile">
+                    <a href="javascript:;"><img class="my-img" src="../images/loading.gif" crossorigin="anonymous"/></a>
+                </div>
+            </div>
+            <div class="mdui-col-xs-12 mdui-col-sm-8 mdui-col-md-9">
+                <div class="mdui-typo">
+                    <p><span class="cat">作者:</span> <span class="my-author"></span></p>
+                    <p><span class="cat">出版社:</span> <span class="my-publier"></span></p>
+                    <p><span class="cat">译者:</span> <span class="my-translator"></span></p>
+                    <p><span class="cat">出版年:</span> <span class="my-pubdate"></span></p>
+                    <p><span class="cat">页数:</span> <span class="my-pages"></span></p>
+                    <p><span class="cat">定价:</span> <span class="my-price"></span></p>
+                    <p><span class="cat">装帧:</span> <span class="my-binding"></span></p>
+                    <p><span class="cat">丛书:</span> <span class="my-series"></span></p>
+                    <p><span class="cat">ISBN:</span> <span class="my-isbn13"></span></p>
+                    <p><span class="cat">标签:</span> <span class="my-tags"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="gap-28"></div>
+        <div class="mdui-row">
+            <div class="mdui-col-xs-4 mdui-col-sm-2 mdui-col-md-1">
+                <button class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-btn-mini">想读</button>
+            </div>
+            <div class="mdui-col-xs-4 mdui-col-sm-2 mdui-col-md-1">
+                <button class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-btn-mini">在读</button>
+            </div>
+            <div class="mdui-col-xs-4 mdui-col-sm-2 mdui-col-md-1">
+                <button class="mdui-btn mdui-btn-raised mdui-btn-dense mdui-btn-mini">读过</button>
+            </div>
+            <!--<div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-3">-->
+                <!--<button class="mdui-btn mdui-btn-raised mdui-btn-dense">想读</button>-->
+                <!--<button class="mdui-btn mdui-btn-raised mdui-btn-dense">在读</button>-->
+                <!--<button class="mdui-btn mdui-btn-raised mdui-btn-dense">在读</button>-->
+            <!--</div>-->
+            <div class="mdui-col-xs-12 mdui-col-sm-6 mdui-col-md-9">
+                <div class="mdui-typo">
+                    <p><span class="cat">评分:</span> <i  ng-model="b_remark" class="allstar"></i> <i class="my-grad"></i></p>
+                </div>
+            </div>
+        </div>
+        <div class="mdui-divider my-line"></div>
+        <div class="mdui-row">
+            <div class="mdui-typo">
+                <h4>作者简介...</h4>
+                <p class="my-author-info"></p>
+            </div>
+            <div class="mdui-typo">
+                <h4>内容简介...</h4>
+                <p class="my-content"></p>
+            </div>
+            <div class="mdui-typo">
+                <h4>目录...</h4>
+                <p class="my-catalog"></p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../javascripts/bookDetails.js"></script>
+
