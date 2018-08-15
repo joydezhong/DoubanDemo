@@ -33,7 +33,7 @@
                     </div>
                     <div class="mdui-card-actions">
                         <a ng-if="item.videoHref" href="{{item.videoHref}}" target="_blank" class="mdui-btn mdui-btn-icon mdui-ripple" mdui-tooltip="{content: '预告片', position: 'top'}"><i class="mdui-icon material-icons play-icon">&#xe039;</i></a>
-                        <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                        <a href="#/movieDetails?movie={{item.movieId}}" class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></a>
                     </div>
                 </div>
             </div>

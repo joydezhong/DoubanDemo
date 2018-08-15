@@ -35,9 +35,9 @@
                     </div>
                     <div class="mdui-card-actions">
                         <div class="mdui-chip my-chip">
-                            <span class="mdui-chip-title" data-href="{{item.buyHref}}">选座购票</span>
+                            <span class="mdui-chip-title" ng-click="goBuy($event)" data-href="{{item.buyHref}}">选座购票</span>
                         </div>
-                        <button class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></button>
+                        <a href="#/movieDetails?movie={{item.movieId}}" class="mdui-btn mdui-btn-icon mdui-float-right"><i class="mdui-icon material-icons">expand_more</i></a>
                     </div>
                 </div>
             </div>

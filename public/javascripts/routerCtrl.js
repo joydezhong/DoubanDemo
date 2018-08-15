@@ -106,6 +106,10 @@ DoubanApp.config(['$routeProvider', function($routeProvider){
             templateUrl: '/view/bookDetails.ejs',
             controller: 'bookDetailController'
         })
+        .when('/movieDetails', {
+            templateUrl: '/view/movieDetails.ejs',
+            controller: 'movieDetailController'
+        })
         .otherwise({
            redirectTo: '/'
         });

@@ -213,6 +213,18 @@ DoubanApp.controller('hotMoviesController', ['$scope', '$http', 'GetCityService'
         console.log(err);
     });
 
+    $scope.goBuy = function(e){
+        var buyHref = $(e.target).attr("data-href");
+        console.log(buyHref);
+        //解决浏览器拦截窗口
+        var form = document.createElement('form');
+        form.action = buyHref;
+        form.target = '_blank';
+        form.method = 'GET';
+        document.body.appendChild(form);
+        form.submit();
+    };
+
 }]);
 
 //即将上映控制器
@@ -583,8 +595,6 @@ DoubanApp.controller('hotActiveController', ['$scope', '$http', 'GetCityService'
 
 
 
-
-
 /* 详情类 控制器 */
 
 //图书详情
@@ -628,23 +638,6 @@ DoubanApp.controller('bookDetailController', ['$scope', '$http', '$location', fu
                 $('.my-content').html("<pre>"+json.summary+"</pre>");
                 $('.my-catalog').html("<pre>"+json.catalog+"</pre>");
 
-
-                // $scope.b_title = json.title;
-                // $scope.b_img = json.image.replace(/^https:/g,"");
-                // $scope.b_author = json.author;
-                // $scope.b_publisher = json.publisher;
-                // $scope.b_translator = json.translator;
-                // $scope.b_pubdate = json.pubdate;
-                // $scope.b_pages = json.pages;
-                // $scope.b_price = json.price;
-                // $scope.b_binding = json.binding;
-                // $scope.b_series = json.series;
-                // $scope.b_ISBN = json.isbn13;
-                // $scope.b_tags = json.tags;
-                // $scope.b_author_intro = json.author_intro;
-                // $scope.b_summary = json.summary;
-                // $scope.b_catalog = json.catalog;
-                // $scope.b_remark = json.rating.average;
             }else{
                 console.log(json);
             }
@@ -672,5 +665,89 @@ DoubanApp.controller('bookDetailController', ['$scope', '$http', '$location', fu
     //     console.log($window);
     // },1000);
 
+}]);
+
+
+//电影详情
+DoubanApp.controller('movieDetailController', ['$scope', '$http', '$location', function ($scope, $http, $location) {
+    $scope.pageClass = 'page-movieDetail';
+    var movieId = $location.search().movie;
+
+    $.ajax({
+        type: "get",
+        url: "https://api.douban.com/v2/movie/subject/"+movieId,
+        contentType: "text/html",
+        dataType: 'jsonp',
+        async: false,
+        jsonp: "callback",
+        success: function(json){
+            if(json.title){
+                console.log(json);
+                $('.my-title').text(json.title);
+                setTimeout(function(){ $('.my-img').attr('src','https://images.weserv.nl/?url='+json.images.medium.replace(/^https:/g,"")); },1200);
+                var director = '';
+                for(var i = 0; i < json.directors.length; i++){
+                    if(i == 0){
+                        director += json.directors[i].name;
+                    }else{
+                        director += '/' + json.directors[i].name;
+                    }
+                }
+                $('.my-director').text(director?director:'不详');
+                var casts = '';
+                for(var i = 0; i < json.casts.length; i++){
+                    if(i == 0){
+                        casts += json.casts[i].name;
+                    }else{
+                        casts += '/' + json.casts[i].name;
+                    }
+                }
+                $('.my-casts').text(casts?casts:'不详');
+                var types = '';
+                for(var i = 0; i < json.genres.length; i++){
+                    if(i == 0){
+                        types += json.genres[i];
+                    }else{
+                        types += '/' + json.genres[i];
+                    }
+                }
+                $('.my-type').text(types?types:'不详');
+                var country = '';
+                for(var i = 0; i < json.countries.length; i++){
+                    if(i == 0){
+                        country += json.countries[i];
+                    }else{
+                        country += '/' + json.countries[i];
+                    }
+                }
+                $('.my-country').text(country?country:'不详');
+                $('.my-year').text(json.year?json.year:'不详');
+                $('.my-comments').text(json.comments_count?json.comments_count:'不详');
+                var aka = '';
+                for(var i = 0; i < json.aka.length; i++){
+                    if(i == 0){
+                        aka += json.aka[i];
+                    }else{
+                        aka += '/' + json.aka[i];
+                    }
+                }
+                $('.my-yname').text(aka?aka:'不详');
+
+                $('.allstar').addClass('allstar'+json.rating.average*10);
+                $('.my-grad').text(Math.ceil(json.rating.average)?json.rating.average:'评论不足');
+                // $('.my-author-info').html("<pre>"+json.author_intro+"</pre>");
+                $('.my-content').html("<pre>"+json.summary+"</pre>");
+                // $('.my-catalog').html("<pre>"+json.catalog+"</pre>");
+
+            }else{
+                console.log(json);
+            }
+        },
+        error: function(xhr,status,thr){
+            console.log(xhr);
+            console.log(status);
+            console.log(thr);
+        }
+    });
 
 }]);
